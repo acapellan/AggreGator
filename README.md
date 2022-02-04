@@ -4,12 +4,13 @@ For current and former University of Florida students and professors WHO want to
 
 ## Authors:
 
-* Brian Hoblin
-* Alejandro Capellan
-* Jacob Boney
-* Steven DeLoach
+- Brian Hoblin - Scrum Master
+- Alejandro Capellan
+- Jacob Boney
+- Steven DeLoach
 
 ## User Stories
-* [X] Project Proposal Completed
+
+- [x] Project Proposal Completed
 
 ## Notes
