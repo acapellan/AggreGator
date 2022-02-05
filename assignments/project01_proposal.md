@@ -1,4 +1,4 @@
-_CEN3031 - Intro to Software Engineering_
+_CEN3031 - Intro to Software Engineering_  
 _Winter 2022_
 
 # Project 1 Proposal - Group 3
