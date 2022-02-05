@@ -13,4 +13,32 @@ For current and former University of Florida students and professors WHO want to
 
 - [x] Project Proposal Completed
 
+## Forking
+
+1. Go to the AggreGator repository on GitHub: https://github.com/acapellan/AggreGator
+2. Click the "Fork" Button in the upper right-hand corner of the interface
+3. After the repository has been forked, you will be taken to your copy of the ArrgeGator repository at https://github.com/YOUR_USER_NAME/AggreGator (YOUR_USER_NAME would be replaced with your GitHub user name.)
+
+The official GitHub instructions can be found here: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
+## Cloning
+
+1. In GitHub, click the Code dropdown, select SSH (or your preferred method), and click the copy button
+2. Open a Terminal / Command Prompt / Shell in your projects directory
+3. In the terminal, enter $ git clone git@github.com:YOUR_USER_NAME/AggreGator.git
+
+The official GitHub instructions can be found here: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+## Pull from main
+
+To pull in the current version of main, run the following command,
+
+git pull origin main
+
+It is recommend to commit your changes and run the above command at the end of each work day to reduce merge conflicts.
+
+## Pull Requests
+
+The official GitHub instructions can be found here: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+
 ## Notes
