@@ -16,7 +16,7 @@ _Winter 2022_
 
 ## Project management tool
 
-- [Github Projects](https://github.com/acapellan/AggreGator/projects/2) 
+- [Github Projects](https://github.com/acapellan/AggreGator/) 
 
 ## Configuration Management Tool
 
