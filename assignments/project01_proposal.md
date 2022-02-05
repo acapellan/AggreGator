@@ -24,7 +24,7 @@ _Winter 2022_
 
 ## Product name and description
 
-> [AggreGator](https://github.com/acapellan/AggreGator) is a web-based service for the University of Florida’s students, professors, and alumni that provides a forum for preparing for upcoming courses, performing well in current courses, and remaining up-to-date on the latest industry trends. Gators are able to discuss, ask questions, share material, and encourage each other to achieve their goals in the classroom and boardroom. Unlike other services, [AggreGator](https://github.com/acapellan/AggreGator) is a unique service designed specifically for Gators. 
+[AggreGator](https://github.com/acapellan/AggreGator) is a web-based service for the University of Florida’s students, professors, and alumni that provides a forum for preparing for upcoming courses, performing well in current courses, and remaining up-to-date on the latest industry trends. Gators are able to discuss, ask questions, share material, and encourage each other to achieve their goals in the classroom and boardroom. Unlike other services, [AggreGator](https://github.com/acapellan/AggreGator) is a unique service designed specifically for Gators. 
 
 ## Languages & Tools for Project Build
 
