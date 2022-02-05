@@ -12,7 +12,7 @@ const apiKeys = ['foo', 'bar', 'baz'];
 // Create an error with status--this property can be used in our
 // custom error handler (Connect respects this property as well)
 let error = (status, msg) => {
-  var err = new Error(msg);
+  let err = new Error(msg);
   err.status = status;
   return err;
 };
