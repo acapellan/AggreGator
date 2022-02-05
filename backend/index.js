@@ -1,3 +1,5 @@
+// source credit: https://github.com/expressjs/express/blob/master/examples/web-service/index.js
+
 // Module dependencies
 const express = require('express');
 const app = express();
@@ -15,9 +17,27 @@ let error = (status, msg) => {
   return err;
 };
 
+// These next three objects (repos, users, and userRepos) serve as a faux database for now
+const repos = [
+  {name: 'express', url: 'https://github.com/expressjs/express'},
+  {name: 'aggreGator', url: 'https://github.com/acapellan/AggreGator'},
+  {name: 'bootstrap', url: 'https://github.com/twbs/bootstrap'},
+  {name: 'you-dont-know-js', url: 'https://github.com/getify/You-Dont-Know-JS'},
+  {name: 'linux', url: 'https://github.com/torvalds/linux'}
+];
+
+const users = [{name: 'Brian'}, {name: 'Alejandro'}, {name: 'Jacob'}, {name: 'Steven'}];
+
+const userRepos = {
+  Brian: [repos[0], repos[1]],
+  Alejandro: [repos[1], repos[2]],
+  Jacob: [repos[2], repos[3]],
+  Steven: [repos[3], repos[4]]
+};
+
 // here we validate the API key, by mounting this middleware to /api
 // meaning only paths prefixed with "/api" will cause this middleware to be invoked
-app.use('/api', function (req, res, next) {
+app.use('/api', (req, res, next) => {
   const key = req.query['api-key'];
 
   // key isn't present
@@ -35,40 +55,21 @@ app.use('/api', function (req, res, next) {
   next();
 });
 
-// These three objects serve as a faux database for now
-var repos = [
-  {name: 'express', url: 'https://github.com/expressjs/express'},
-  {name: 'aggreGator', url: 'https://github.com/acapellan/AggreGator'},
-  {name: 'bootstrap', url: 'https://github.com/twbs/bootstrap'},
-  {name: 'you-dont-know-js', url: 'https://github.com/getify/You-Dont-Know-JS'},
-  {name: 'linux', url: 'https://github.com/torvalds/linux'}
-];
-
-var users = [{name: 'Brian'}, {name: 'Alejandro'}, {name: 'Jacob'}, {name: 'Steven'}];
-
-var userRepos = {
-  Brian: [repos[0], repos[1]],
-  Alejandro: [repos[1], repos[2]],
-  Jacob: [repos[2], repos[3]],
-  Steven: [repos[3], repos[4]]
-};
-
-// api key is valid, and simply expose the data
-
-// example: http://localhost:3000/api/users/?api-key=foo
+// API key is valid, expose the data
 app.get('/api/users', (req, res, next) => {
+  // example: http://localhost:3000/api/users/?api-key=foo
   res.send(users);
 });
 
-// example: http://localhost:3000/api/repos/?api-key=foo
 app.get('/api/repos', (req, res, next) => {
+  // example: http://localhost:3000/api/repos/?api-key=foo
   res.send(repos);
 });
 
-// example: http://localhost:3000/api/user/tobi/repos/?api-key=foo
 app.get('/api/user/:name/repos', (req, res, next) => {
-  var name = req.params.name;
-  var user = userRepos[name];
+  // example: http://localhost:3000/api/user/Alejandro/repos/?api-key=foo
+  const name = req.params.name;
+  const user = userRepos[name];
 
   if (user) {
     res.send(user);
@@ -93,7 +94,6 @@ app.use((req, res) => {
   res.send({error: "Sorry, can't find that"});
 });
 
-/* istanbul ignore next */
 app.listen(port, () => {
   console.log(`AggreGator API started on port ${port}`);
 });
