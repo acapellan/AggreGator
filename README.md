@@ -5,7 +5,7 @@ For current and former University of Florida students and professors WHO want to
 ## Authors:
 
 - Brian Hoblin - Scrum Master
-- Alejandro Capellan
+- Alejandro Capellan - Project Manager
 - Jacob Boney
 - Steven DeLoach
 
@@ -29,11 +29,11 @@ The official GitHub instructions can be found here: https://docs.github.com/en/g
 
 The official GitHub instructions can be found here: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-## Pull from main
+## Pull from master
 
-To pull in the current version of main, run the following command,
+To pull in the current version of master, run the following command,
 
-git pull origin main
+git pull origin master
 
 It is recommend to commit your changes and run the above command at the end of each work day to reduce merge conflicts.
 
