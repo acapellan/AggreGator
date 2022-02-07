@@ -2,12 +2,16 @@
 
 **FOR** current and former University of Florida students and professors **WHO** want to prepare for upcoming courses, perform well in their current studies, and remain updated on the latest industry trends, **THE** AggreGator is a web-based service **THAT** provides a forum for Gators to discuss, ask questions, share material, and encourage each other achieve their goals in the classroom and the boardroom. **UNLIKE** other message boards or blog services, **OUR** product is the only service of its kind made by Gators and only for Gators past, present, and future.
 
-## Authors:
+## Authors
 
 - **[Brian Hoblin](https://github.com/GoonerBrian)**,  _SCRUM Master/Developer_
 - **[Alejandro Capellan](https://github.com/acapellan)**, _Project Manager/Developer_
 - **[Jacob Boney](https://github.com/jacobboney)**, _Developer_
 - **[Steven DeLoach](https://github.com/sfdeloach)**, _Developer_
+
+## Project Overview
+
+![project_overview.png](./project_overview.png)
 
 ## User Stories
 
