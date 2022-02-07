@@ -13,7 +13,9 @@ describe('Array', function () {
   });
 });
 
-describe('app', function () {
+// Confirm the express application is installed correctly and
+// returns the default client error (4xx) on an empty route
+describe('Express', function () {
   it('should inherit from event emitter', function (done) {
     const app = express();
     app.on('foo', done);

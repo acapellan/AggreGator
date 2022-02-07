@@ -97,3 +97,5 @@ app.use((req, res) => {
 app.listen(port, () => {
   console.log(`AggreGator API started on port ${port}`);
 });
+
+module.exports = app;
