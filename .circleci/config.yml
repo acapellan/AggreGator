@@ -30,5 +30,5 @@ workflows:
           # Relevant tags can be found on the CircleCI Developer Hub
           # https://circleci.com/developer/images/image/cimg/node
           version: '16.10'
-          # If you are using yarn, change the line below from "npm" to "yarn"
+          app-dir: "~/circleci/project/backend"
           pkg-manager: npm
