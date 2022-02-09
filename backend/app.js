@@ -3,7 +3,7 @@
 // Module dependencies
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // map of valid api keys, typically mapped to account info with some sort of database like redis.
 // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious behavior etc.
