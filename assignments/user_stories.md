@@ -1,7 +1,7 @@
 |       User Story Title       |
 |------------------------------|
-| As a *<user role>* I want to |
-| *<goal>* so that *<benefit>*.|
+| As a **user role** I want to |
+| **goal** so that **benefit**.|
 
 |                  Prepare for a required class                   |
 |-----------------------------------------------------------------|
