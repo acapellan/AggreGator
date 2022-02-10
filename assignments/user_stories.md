@@ -1,5 +1,14 @@
 # User Stories
 
+1. [For all students](#For all students)
+2. [For prospective students](#For prospective students)
+3. [For undergraduate students](#For undergraduate students)
+4. [For postgraduate students](#For postgraduate students)
+5. [For student transfers](#For student transfers)
+6. [For graduates working in industry](#For graduates working in industry)
+7. [For instructors](#For instructors)
+8. [For teaching assistants](#For teaching assistants)
+
 ## For all students
 
 | Find a study partner                              |
