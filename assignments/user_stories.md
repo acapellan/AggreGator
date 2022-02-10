@@ -1,13 +1,23 @@
-# User Stories
+_CEN3031 - Intro to Software Engineering_  
+_Spring 2022_
 
-1. [For all students](#For all students)
-2. [For prospective students](#For prospective students)
-3. [For undergraduate students](#For undergraduate students)
-4. [For postgraduate students](#For postgraduate students)
-5. [For student transfers](#For student transfers)
-6. [For graduates working in industry](#For graduates working in industry)
-7. [For instructors](#For instructors)
-8. [For teaching assistants](#For teaching assistants)
+# User Stories - Group 3
+
+- **[Brian Hoblin](https://github.com/GoonerBrian)**,  _SCRUM Master/Developer_
+- **[Alejandro Capellan](https://github.com/acapellan)**, _Project Manager/Developer_
+- **[Jacob Boney](https://github.com/jacobboney)**, _Developer_
+- **[Steven DeLoach](https://github.com/sfdeloach)**, _Developer_
+
+## Table of contents
+
+1. [For all students](For-all-students)
+2. [For prospective students](For-prospective-students)
+3. [For undergraduate students](For-undergraduate-students)
+4. [For postgraduate students](For-postgraduate-students)
+5. [For student transfers](For-student-transfers)
+6. [For graduates working in industry](For-graduates-working-in-industry)
+7. [For instructors](For-instructors)
+8. [For teaching assistants](For-teaching-assistants)
 
 ## For all students
 
