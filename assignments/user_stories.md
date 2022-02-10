@@ -78,7 +78,7 @@
 | community so that I am able to feel a sense of        |
 | belonging and community.                              |
 
-## For graduates working in the industry
+## For graduates working in industry
 
 | A desire to pay it forward                         |
 |----------------------------------------------------|
