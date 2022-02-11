@@ -1,52 +1,483 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <style type="text/css">
+      .blank-space {
+        min-height: 50px;
+      }
+    </style>
 
     <title>User Stories</title>
-</head>
+  </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h4 class="text-center">All Students</h3>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Prospective Students</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Undergraduate Students</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Postgraduate Students</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Transfer Students</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Graduates in industry</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Instructors</h4>
-            </div>
-            <div class="col">
-                <h4 class="text-center">Teaching Assts</h4>
-            </div>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AggreGator</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="blank-space"></div>
+        <div class="col"><h1>User Stories - Group 3</h1></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>
+              <a href="https://github.com/GoonerBrian">Brian Hoblin</a>,
+              <em>ScrumMaster/Developer</em>
+            </li>
+            <li>
+              <a href="https://github.com/acapellan">Alejandro Capellan</a>,
+              <em>Project Manager/Developer</em>
+            </li>
+            <li>
+              <a href="https://github.com/jacobboney">Jacob Boney</a>,
+              <em>Developer</em>
+            </li>
+            <li>
+              <a href="https://github.com/sfdeloach">Steven DeLoach</a>,
+              <em>Developer</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="blank-space"></div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">All Students</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Find a study partner</h6>
+              <p class="card-text fs-6">
+                As a student, I want to find a partner to help me study and keep me encouraged so
+                that I maintain my motivation throughout the entire semester.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Become more marketable</h6>
+              <p class="card-text fs-6">
+                As a student, I want to learn how to make myself marketable to an industry so that I
+                can have security in knowing I will find a fulfilling job.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Find a job/internship</h6>
+              <p class="card-text fs-6">
+                As a student, I want to find a job/internship at an exciting company so that I can
+                build up my resume.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Prospective Students</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Find out if UF is right for me</h6>
+              <p class="card-text fs-6">
+                As a prospective student, I want to find out if attending UF is right for me so that
+                I can make a wise choice in selecting the college I attend.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Learn about degrees/programs</h6>
+              <p class="card-text fs-6">
+                As a prospective student, I want to learn about the degrees and programs at UF so
+                that I can make an informed decision on an academic path that meets my goals.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Undergraduate Students</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Do well in a current class</h6>
+              <p class="card-text fs-6">
+                As an undergraduate student, I want suggestions on how to do well in a class I am
+                taking so that I can get a good grade.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Prepare for an upcoming class</h6>
+              <p class="card-text fs-6">
+                As an undergraduate student, I want a list of resources that prior students found
+                helpful in their studies so that I can be better prepared.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Learn more about electives</h6>
+              <p class="card-text fs-6">
+                As an undergraduate student, I want to know which electives I should consider taking
+                so that they better match my interests/goals.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Postgraduate Students</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Learn if attending graduate school is right for me</h6>
+              <p class="card-text fs-6">
+                As a postgraduate student, I want to know if attending graduate school is necessary
+                to reach my goals so that I can decide if I should enter into a career or stay in
+                school.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Get advice on how to be successful</h6>
+              <p class="card-text fs-6">
+                As a postgraduate student, I want advice on how to be successful in my graduate
+                studies so that I can earn my advanced degree.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Transfer Students</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Become a part of the UF community</h6>
+              <p class="card-text fs-6">
+                As a student transferring from another institution, I want to know how I can become
+                a part of the UF community so that I am able to feel a sense of belonging and
+                community.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Graduates in industry</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">A desire to pay it forward</h6>
+              <p class="card-text fs-6">
+                As a graduate who has entered the career field, I want to advise current students
+                who are seeking information on possible careers so that I can be a mentor to a
+                younger Gator generation.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Network with alumni</h6>
+              <p class="card-text fs-6">
+                As a graduate who has entered the career field, I want to network with other alumni
+                so that I can form business partnerships with my fellow alumni. mentor to a younger
+                Gator generation.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Instructors</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Receive feedback from courses</h6>
+              <p class="card-text fs-6">
+                As an instructor, I want to receive honest feedback from my prior students on the
+                experience of taking my course so that I can continually improve my teaching
+                methods.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Keep the material relevant</h6>
+              <p class="card-text fs-6">
+                As an instructor, I want to stay up to date with the latest industry trends and
+                practices so that I can update/improve my curriculum to prepare my students for
+                their careers.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- new column -->
+        <div class="col">
+          <div class="card text-white text-center bg-primary mb-3">
+            <div class="card-header fw-bold">Teaching Assts</div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Additional resources for help</h6>
+              <p class="card-text fs-6">
+                As a teaching assistant, I want to direct students to additional resources that help
+                them overcome their challenges with the course so that they do not become
+                frustrated.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Find Work, Life, Study Balance</h6>
+              <p class="card-text fs-6">
+                As a teaching assistant, I want to connect with other teaching assistants so that I
+                discuss the unique challenges that face teaching assistants and learn the best
+                strategies to balance my responsibilities.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Conversation</h6>
+              <p class="card-text fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa ante, malesuada
+                vitae metus eu, faucibus blandit arcu. Mauris ut quam diam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="blank-space"></div>
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
