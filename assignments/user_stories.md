@@ -32,15 +32,19 @@ _Spring 2022_
 | my motivation throughout the entire semester.     |
 
 #### Conversation
-- Students enter the current classes they are taking
-- Match student accounts who are looking for study partners
-- Messages sent to each other are not viewable by the public
+
+- What criteria could be used to find the user a suitable study partner? 
+- What types of criteria should the partner have to encourage the user to study? 
+- Should each class have its own set of criteria or is there a way to generalize the data? 
   
 #### Confirmation
-- Users receive notifications of potential matches
-- Verify messages are private
 
-### Card
+- Each user can have a general set of criteria that they’re looking for in a study partner. This can be saved in their user profile. Users can navigate to the user profile and update a menu with a few categories.  
+- User can input the amount of time they wish to spend studying per week and select their available days of the week. Drop down menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
+
+### Become more marketable
+
+#### Card
 
 | Become more marketable                                |
 |-------------------------------------------------------|
@@ -48,16 +52,41 @@ _Spring 2022_
 | marketable to an industry so that I can have security |
 | in knowing I will find a fulfilling job.              |
 
-### Card
+#### Conversation
+
+- What specific job criteria/technologies should students be familiar with?
+- What skills are the most in demand by companies?
+- What kind of career would be considered as fulfilling for the student?
+  
+#### Confirmation
+
+- Provide resources aligning with the area the student is interested in.
+- Users are able to use keywords to find relevant industry material.
+- Students take a survey that helps them to develop a user profile.
+- Link user to top three upvoted pages for that industry that matches their profile.
+
+### Find a job/internship
+
+#### Card
 
 | Find a job/internship                               |
 |-----------------------------------------------------|
 | As a student, I want to find a job/internship at an |
 | exciting company so that I can build up my resume.  |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For prospective students
 
-### Card
+### Find out if UF is right for me
+
+#### Card
 
 | Find out if UF is right for me                    |
 |---------------------------------------------------|
@@ -65,7 +94,17 @@ _Spring 2022_
 | attending UF is right for me so that I can make a |
 | wise choice in selecting the college I attend.    |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Learn about degrees/programs
+
+#### Card
 
 | Learn about degrees/programs                        |
 |-----------------------------------------------------|
@@ -74,9 +113,19 @@ _Spring 2022_
 | informed decision on an academic path that meets my |
 | goals.                                              |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For undergraduate students
 
-### Card
+### Do well in a current class
+
+#### Card
 
 | Do well in a current class                          |
 |-----------------------------------------------------|
@@ -84,7 +133,9 @@ _Spring 2022_
 | how to do well in a class I am taking so that I can |
 | get a good grade.                                   |
 
-### Card
+### Prepare for an upcoming class
+
+#### Card
 
 | Prepare for an upcoming class                        |
 |------------------------------------------------------|
@@ -92,7 +143,17 @@ _Spring 2022_
 | resources that prior students found helpful in their |
 | studies so that I can be better prepared.            |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Learn more about electives
+
+#### Card
 
 | Learn more about electives                        |
 |---------------------------------------------------|
@@ -100,9 +161,19 @@ _Spring 2022_
 | electives I should consider taking so that they   |
 | better match my interests/goals.                  |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For postgraduate students
 
-### Card
+### Learn if attending graduate school is right for me
+
+#### Card
 
 | Learn if attending graduate school is right for me  |
 |-----------------------------------------------------|
@@ -111,7 +182,17 @@ _Spring 2022_
 | goals so that I can decide if I should enter into a |
 | career or stay in school.                           |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Get advice on how to be successful
+
+#### Card
 
 | Get advice on how to be successful                    |
 |-------------------------------------------------------|
@@ -119,9 +200,19 @@ _Spring 2022_
 | successful in my graduate studies so that I can earn  |
 | my advanced degree.                                   |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For student transfers
 
-### Card
+### Become a part of the UF community
+
+#### Card
 
 | Become a part of the UF community                     |
 |-------------------------------------------------------|
@@ -130,9 +221,19 @@ _Spring 2022_
 | community so that I am able to feel a sense of        |
 | belonging and community.                              |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For graduates working in industry
 
-### Card
+### A desire to pay it forward
+
+#### Card
 
 | A desire to pay it forward                         |
 |----------------------------------------------------|
@@ -141,7 +242,17 @@ _Spring 2022_
 | information on possible careers so that I can be a |
 | mentor to a younger Gator generation.              |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Network with alumni
+
+#### Card
 
 | Network with alumni                                  |
 |------------------------------------------------------|
@@ -150,9 +261,19 @@ _Spring 2022_
 | business partnerships with my fellow alumni.         |
 | mentor to a younger Gator generation.                |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For instructors
 
-### Card
+### Receive feedback from courses
+
+#### Card
 
 | Receive feedback from courses                         |
 |-------------------------------------------------------|
@@ -161,7 +282,17 @@ _Spring 2022_
 | course so that I can continually improve my teaching  |
 | methods.                                              |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Keep the material relevant
+
+#### Card
 
 | Keep the material relevant                           |
 |------------------------------------------------------|
@@ -170,9 +301,19 @@ _Spring 2022_
 | update/improve my curriculum to prepare my students  |
 | for their careers.                                   |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For teaching assistants
 
-### Card
+### Additional resources for help
+
+#### Card
 
 | Additional resources for help                         |
 |-------------------------------------------------------|
@@ -181,7 +322,17 @@ _Spring 2022_
 | challenges with the course so that they do not become |
 | frustrated.                                           |
 
-### Card
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
+### Find Work, Life, Study Balance
+
+#### Card
 
 | Find Work, Life, Study Balance                        |
 |-------------------------------------------------------|
@@ -190,3 +341,11 @@ _Spring 2022_
 | challenges that face teaching assistants and learn    |
 | the best strategies to balance my responsibilities.   |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+- 
