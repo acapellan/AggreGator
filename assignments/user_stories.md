@@ -14,8 +14,8 @@ _Spring 2022_
 2. [For prospective students](For-prospective-students)
 3. [For undergraduate students](For-undergraduate-students)
 4. [For postgraduate students](For-postgraduate-students)
-5. [For student transfers](For-student-transfers)
-6. [For graduates working in industry](For-graduates-working-in-industry)
+5. [For transfer students](For-transfer-students)
+6. [For graduates working in industry](For-graduates-in-industry)
 7. [For instructors](For-instructors)
 8. [For teaching assistants](For-teaching-assistants)
 
@@ -82,6 +82,75 @@ _Spring 2022_
 
 - TODO: DeLoach
 
+### Searching for topic
+
+#### Card
+
+| Search for a topic                                    |
+|-------------------------------------------------------|
+| As a user, I would like to search for my desired      |
+| topic so I don’t waste time with irrelevant topics.   |
+
+#### Conversation
+
+- TODO: Hoblin
+  
+#### Confirmation
+
+- TODO: Hoblin
+
+### Sort by metrics
+
+#### Card
+
+| Sort by metrics                                       |
+|-------------------------------------------------------|
+| As a user, I would like to sort by metrics such as    |
+| approval ratings or timestamps so that I know I am    |
+| looking at quality information.                       |
+
+#### Conversation
+
+- TODO: Capellan
+  
+#### Confirmation
+
+- TODO: Capellan
+
+### Bookmark topics
+
+#### Card
+
+| Bookmark topics                                       |
+|-------------------------------------------------------|
+| As a user, I would like to save or bookmark topics so |
+| that I may access them again more quickly.            |
+
+#### Conversation
+
+- TODO: Boney
+  
+#### Confirmation
+
+- TODO: Boney
+
+### Request specific topics
+
+#### Card
+
+| Request specific topics                               |
+|-------------------------------------------------------|
+| As I user, I would like to request topics so that I   |
+| can receive information tailored to me.               |
+
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ## For prospective students
 
 ### Find out if UF is right for me
@@ -96,11 +165,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Hoblin
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Hoblin
 
 ### Learn about degrees/programs
 
@@ -115,11 +184,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Capellan
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Capellan
 
 ## For undergraduate students
 
@@ -132,6 +201,14 @@ _Spring 2022_
 | As an undergraduate student, I want suggestions on  |
 | how to do well in a class I am taking so that I can |
 | get a good grade.                                   |
+
+#### Conversation
+
+- TODO: Boney
+  
+#### Confirmation
+
+- TODO: Boney
 
 ### Prepare for an upcoming class
 
@@ -163,11 +240,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Hoblin
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Hoblin
 
 ## For postgraduate students
 
@@ -184,11 +261,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Capellan
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Capellan
 
 ### Get advice on how to be successful
 
@@ -202,13 +279,13 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Boney
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Boney
 
-## For student transfers
+## For transfer students
 
 ### Become a part of the UF community
 
@@ -229,7 +306,7 @@ _Spring 2022_
 
 - TODO: DeLoach
 
-## For graduates working in industry
+## For graduates in industry
 
 ### A desire to pay it forward
 
@@ -244,11 +321,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Hoblin
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Hoblin
 
 ### Network with alumni
 
@@ -263,11 +340,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Capellan
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Capellan
 
 ## For instructors
 
@@ -284,11 +361,11 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Boney
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Boney
 
 ### Keep the material relevant
 
@@ -324,17 +401,17 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Hoblin
   
 #### Confirmation
 
-- TODO: DeLoach
+- TODO: Hoblin
 
 ### Find Work, Life, Study Balance
 
 #### Card
 
-| Find Work, Life, Study Balance                        |
+| Find work, life, study balance                        |
 |-------------------------------------------------------|
 | As a teaching assistant, I want to connect with other |
 | teaching assistants so that I discuss the unique      |
@@ -343,9 +420,8 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- TODO: Capellan
   
 #### Confirmation
 
-- TODO: DeLoach
-- 
+- TODO: Capellan
