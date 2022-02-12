@@ -145,3 +145,25 @@ _Spring 2022_
 | challenges that face teaching assistants and learn    |
 | the best strategies to balance my responsibilities.   |
 
+## For all users
+
+| Searching for a Topic                                 |
+|-------------------------------------------------------|
+| As a user, I would like to search for my desired      |
+| topic so I don’t waste time with irrelevant topics.   |
+
+| Sort by Metrics                                       |
+|-------------------------------------------------------|
+| As a user, I would like to sort by metrics such as    |
+| approval ratings or timestamps so that I know I am    |
+| looking at quality information.                       |
+
+| Sort by Metrics                                       |
+|-------------------------------------------------------|
+| As a user, I would like to save or bookmark topics so |
+| that I may access them again more quickly.            |
+
+| Request specific Topics                               |
+|-------------------------------------------------------|
+| As I user, I would like to request topics so that I   |
+| can receive information tailored to me.               |
