@@ -158,7 +158,7 @@ _Spring 2022_
 | approval ratings or timestamps so that I know I am    |
 | looking at quality information.                       |
 
-| Sort by Metrics                                       |
+| Bookmark Topics                                       |
 |-------------------------------------------------------|
 | As a user, I would like to save or bookmark topics so |
 | that I may access them again more quickly.            |
