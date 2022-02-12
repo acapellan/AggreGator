@@ -10,14 +10,14 @@ _Spring 2022_
 
 ## Table of contents
 
-1. [For all students](For-all-students)
-2. [For prospective students](For-prospective-students)
-3. [For undergraduate students](For-undergraduate-students)
-4. [For postgraduate students](For-postgraduate-students)
-5. [For transfer students](For-transfer-students)
-6. [For graduates working in industry](For-graduates-in-industry)
-7. [For instructors](For-instructors)
-8. [For teaching assistants](For-teaching-assistants)
+1. [For all students](#For-all-students)
+2. [For prospective students](#For-prospective-students)
+3. [For undergraduate students](#For-undergraduate-students)
+4. [For postgraduate students](#For-postgraduate-students)
+5. [For transfer students](#For-transfer-students)
+6. [For graduates working in industry](#For-graduates-in-industry)
+7. [For instructors](#For-instructors)
+8. [For teaching assistants](#For-teaching-assistants)
 
 ## For all students
 
