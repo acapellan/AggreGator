@@ -21,17 +21,34 @@ _Spring 2022_
 
 ## For all students
 
+### Find a study partner
+
+#### Card
+
 | Find a study partner                              |
 |---------------------------------------------------|
 | As a student, I want to find a partner to help me |
 | study and keep me encouraged so that I maintain   |
 | my motivation throughout the entire semester.     |
 
+#### Conversation
+- Students enter the current classes they are taking
+- Match student accounts who are looking for study partners
+- Messages sent to each other are not viewable by the public
+  
+#### Confirmation
+- Users receive notifications of potential matches
+- Verify messages are private
+
+### Card
+
 | Become more marketable                                |
 |-------------------------------------------------------|
 | As a student, I want to learn how to make myself      |
 | marketable to an industry so that I can have security |
 | in knowing I will find a fulfilling job.              |
+
+### Card
 
 | Find a job/internship                               |
 |-----------------------------------------------------|
@@ -40,11 +57,15 @@ _Spring 2022_
 
 ## For prospective students
 
+### Card
+
 | Find out if UF is right for me                    |
 |---------------------------------------------------|
 | As a prospective student, I want to find out if   |
 | attending UF is right for me so that I can make a |
 | wise choice in selecting the college I attend.    |
+
+### Card
 
 | Learn about degrees/programs                        |
 |-----------------------------------------------------|
@@ -55,17 +76,23 @@ _Spring 2022_
 
 ## For undergraduate students
 
+### Card
+
 | Do well in a current class                          |
 |-----------------------------------------------------|
 | As an undergraduate student, I want suggestions on  |
 | how to do well in a class I am taking so that I can |
 | get a good grade.                                   |
 
+### Card
+
 | Prepare for an upcoming class                        |
 |------------------------------------------------------|
 | As an undergraduate student, I want a list of        |
 | resources that prior students found helpful in their |
 | studies so that I can be better prepared.            |
+
+### Card
 
 | Learn more about electives                        |
 |---------------------------------------------------|
@@ -75,12 +102,16 @@ _Spring 2022_
 
 ## For postgraduate students
 
+### Card
+
 | Learn if attending graduate school is right for me  |
 |-----------------------------------------------------|
 | As a postgraduate student, I want to know if        |
 | attending graduate school is necessary to reach my  |
 | goals so that I can decide if I should enter into a |
 | career or stay in school.                           |
+
+### Card
 
 | Get advice on how to be successful                    |
 |-------------------------------------------------------|
@@ -89,6 +120,8 @@ _Spring 2022_
 | my advanced degree.                                   |
 
 ## For student transfers
+
+### Card
 
 | Become a part of the UF community                     |
 |-------------------------------------------------------|
@@ -99,12 +132,16 @@ _Spring 2022_
 
 ## For graduates working in industry
 
+### Card
+
 | A desire to pay it forward                         |
 |----------------------------------------------------|
 | As a graduate who has entered the career field, I  |
 | want to advise current students who are seeking    |
 | information on possible careers so that I can be a |
 | mentor to a younger Gator generation.              |
+
+### Card
 
 | Network with alumni                                  |
 |------------------------------------------------------|
@@ -115,12 +152,16 @@ _Spring 2022_
 
 ## For instructors
 
+### Card
+
 | Receive feedback from courses                         |
 |-------------------------------------------------------|
 | As an instructor, I want to receive honest feedback   |
 | from my prior students on the experience of taking my |
 | course so that I can continually improve my teaching  |
 | methods.                                              |
+
+### Card
 
 | Keep the material relevant                           |
 |------------------------------------------------------|
@@ -131,12 +172,16 @@ _Spring 2022_
 
 ## For teaching assistants
 
+### Card
+
 | Additional resources for help                         |
 |-------------------------------------------------------|
 | As a teaching assistant, I want to direct students to |
 | additional resources that help them overcome their    |
 | challenges with the course so that they do not become |
 | frustrated.                                           |
+
+### Card
 
 | Find Work, Life, Study Balance                        |
 |-------------------------------------------------------|
