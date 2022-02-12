@@ -133,6 +133,14 @@ _Spring 2022_
 | how to do well in a class I am taking so that I can |
 | get a good grade.                                   |
 
+#### Conversation
+
+- TODO: DeLoach
+  
+#### Confirmation
+
+- TODO: DeLoach
+
 ### Prepare for an upcoming class
 
 #### Card
