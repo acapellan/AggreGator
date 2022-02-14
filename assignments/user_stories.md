@@ -121,11 +121,15 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Capellan
+- what defines quality information for the user?
+- Besides approval ratings or timestamps, are there other metrics we could use?
+- what would be the best way to sort this information?
 
 #### Confirmation
 
-- TODO: Capellan
+- When searching for information, the user will be given a toolbar where they can sort a list of information by their chosen metrics.
+- The user will be shown the number of "thumbs-up" or "thumbs down" per video, and the list will be sorted by most liked.
+- Each video will have timestamps links per video topic. 
 
 ### Bookmark topics
 
@@ -211,11 +215,15 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Capellan
+- Could we provide prospective students with a survey that would provide suggestions on majors?
+- Should we get the information needed from UF's major description, or is there another database we could use?
+- Would we need different questions on our survey depending on the individual circumstances? (e.g. working full-time, kids, expected time commitment to a degree, etc.)
 
 #### Confirmation
 
-- TODO: Capellan
+- Use the UF degree database to provide students with a complete list of available degrees and programs.
+- This list would have to be sorted based on the results of the given survey. The student would be given various choices which include course list, difficulty rating, and employment prospects of the degree. 
+- The student will then be able to choose which career path they feel is best suited for their goals based on the information provided.
 
 ## For undergraduate students
 
@@ -302,11 +310,14 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Capellan
+- Would providing a forum in which postgraduate students can discuss the choices be best?
+- Could we provide an anonymous manner for alumni to post their career progression? 
+- Could we information on career prospects which generally require graduate degrees for entry?
 
 #### Confirmation
 
-- TODO: Capellan
+- Provide a forum where UF alumni and students can discuss their career goals and engage with experienced alumni.
+- Provide students with career prospects based on their career goal profile, denote which of these would have a graduate degree barrier. 
 
 ### Get advice on how to be successful
 
@@ -392,11 +403,16 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Capellan
+- Could we provide a forum where alumni could discuss their achievements and invite other alumni to ask questions?
+- What would be the best way to suggest networking opportunities?
+- Should networking opportunities be limited to alumni with similar degrees?
 
 #### Confirmation
 
-- TODO: Capellan
+- Provide an option to select from certain criteria on a user profile for suggestions on networking opportunities.
+- Provide a forum for students to discuss their career paths, allow alumni to click on a username and select "send networking invite".
+- Provide suggestions, similar to LinkedIn, for alumni who have similar degrees.
+- Users can have a "friends list" of networked alumni. 
 
 ## For instructors
 
@@ -483,8 +499,10 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Capellan
+- How could we denote that a student is a teaching assistant?
+- Should we combine all teaching assistants into one pool or have seperate forums depending on their college?
 
 #### Confirmation
 
-- TODO: Capellan
+- Teaching assistants can denote that they are a TA on their profile, however, it would need to be approved by their professor.
+- Once a student has been marked as a TA, they will gain access to 'TA only' resources, such as a forum and best practices documentation. 
