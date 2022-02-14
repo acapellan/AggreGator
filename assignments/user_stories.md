@@ -264,7 +264,7 @@ _Spring 2022_
 - How are prior students encouraged to share information they have on their
   experience taking a course?
 - How are students able to discern the information they receive is reliable?
-- 
+  
 #### Confirmation
 
 - The service encourages users to complete a profile that includes their
@@ -356,7 +356,7 @@ _Spring 2022_
 
 - What are some of the traditions/experiences that are unique to UF?
 - How can I meet people with similar interests and become involved?
-- 
+
 #### Confirmation
 
 - Users have access to a forum where they can share information on traditions
