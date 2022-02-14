@@ -138,11 +138,17 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Boney
+- How would a user save desired pages?
+- Would the user want to organize their bookmarks?
+- How would a user access their bookmarks?
+- How would a user know where each bookmark leads?
 
 #### Confirmation
 
-- TODO: Boney
+- A "bookmark" option will be available at the top of each page.
+- Provide the option for the user to organize their bookmarks into folders.
+- A bookmark drop down menu will be accessible on all pages providing access to the bookmarks.
+- The user will be able to rename bookmarks to better identify the contents.
 
 ### Request specific topics
 
@@ -225,11 +231,15 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Boney
+- Would the user want suggestions from students who had previously taken the class?
+- What type of suggestions is the user looking for?
+- How would the student know if the suggestions are high quality?
 
 #### Confirmation
 
-- TODO: Boney
+- Provide a forum for previous students to offer their suggestions.
+- Allow the user to filter suggestions based on the class they are taking.
+- Allow other users to rate a suggestion based on its effectiveness.
 
 ### Prepare for an upcoming class
 
@@ -310,11 +320,13 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Boney
+- Does the student want advice from previous students or professors?
+- Would the student want advice from articles or videos?
 
 #### Confirmation
 
-- TODO: Boney
+- Allow postgraduate students to communicate with students and/or professors on how to be successful.
+- Provide a curated list of articles and/or videos on having a successful postgrad experience. 
 
 ## For transfer students
 
@@ -401,11 +413,15 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: Boney
+- What form of feedback would the instructor find helpful?
+- How would the professor be able to receive honest feedback?
 
 #### Confirmation
 
-- TODO: Boney
+- Allow past students to give the class a rating based on their experience.
+- Students may also leave comments further explaining their experience. 
+- Provide an optional survey for students to take after taking the class.
+- Make it so student remain anonymous when providing feedback.
 
 ### Keep the material relevant
 
