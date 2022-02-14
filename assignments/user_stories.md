@@ -10,7 +10,7 @@ _Spring 2022_
 
 ## Table of contents
 
-1. [For all students](#For-all-students)
+1. [For all users](#For-all-users)
 2. [For prospective students](#For-prospective-students)
 3. [For undergraduate students](#For-undergraduate-students)
 4. [For postgraduate students](#For-postgraduate-students)
@@ -19,7 +19,7 @@ _Spring 2022_
 7. [For instructors](#For-instructors)
 8. [For teaching assistants](#For-teaching-assistants)
 
-## For all students
+## For all users
 
 ### Find a study partner
 
@@ -27,7 +27,7 @@ _Spring 2022_
 
 | Find a study partner                              |
 |---------------------------------------------------|
-| As a student, I want to find a partner to help me |
+| As a user, I want to find a partner to help me    |
 | study and keep me encouraged so that I maintain   |
 | my motivation throughout the entire semester.     |
 
@@ -48,7 +48,7 @@ _Spring 2022_
 
 | Become more marketable                                |
 |-------------------------------------------------------|
-| As a student, I want to learn how to make myself      |
+| As a user, I want to learn how to make myself         |
 | marketable to an industry so that I can have security |
 | in knowing I will find a fulfilling job.              |
 
@@ -71,16 +71,24 @@ _Spring 2022_
 
 | Find a job/internship                               |
 |-----------------------------------------------------|
-| As a student, I want to find a job/internship at an |
+| As a user, I want to find a job/internship at an    |
 | exciting company so that I can build up my resume.  |
 
 #### Conversation
 
-- TODO: DeLoach
+- Which companies are actively seeking to fill positions with students from UF?
+- Are the positions part-time, full-time, or remote? For internships, are the
+  positions paid or unpaid? Where are the positions located?
+- What type of companies are students interested in working for?
   
 #### Confirmation
 
-- TODO: DeLoach
+- Companies actively recruit applicants based on the studies and interests.
+- Students are able to sort/filter job listings based on criteria. For example,
+  list all paid full-time positions located in Florida.
+- Even if students do not apply for a position, they are able to view listings
+  and rate them based on their interest. Additional listings based on their
+  ratings are highlighted as aligning with the student's interests.
 
 ### Searching for topic
 
@@ -151,11 +159,20 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- Are the topics categorized?
+- Are the topics from a predetermined list of topics or are they customized?
+- How do I receive notifications when there is new information available on a
+  requested topic?
   
 #### Confirmation
 
-- TODO: DeLoach
+- Topics are categorized based on field of study, industry-type, and other
+  metrics.
+- Topics are from a predetermined list, but users have the ability to suggest
+  new ones.
+- Users have the option of receiving an email or a notification upon sign in
+  to the website when new information is available that may be of interest to
+  them.
 
 ## For prospective students
 
@@ -232,11 +249,17 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- How are prior students encouraged to share information they have on their
+  experience taking a course?
+- How are students able to discern the information they receive is reliable?
   
 #### Confirmation
 
-- TODO: DeLoach
+- The service encourages users to complete a profile that includes their
+  current coursework. When the semester is finished, automated emails are sent
+  asking students to complete a survey of the course they completed.
+- Only verified students who took a course may rate the posts of other students.
+- A curated list with the hightest ranking responses are displayed first.
 
 ### Learn more about electives
 
@@ -312,11 +335,15 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- What are some of the traditions/experiences that are unique to UF?
+- How can I meet people with similar interests and become involved?
   
 #### Confirmation
 
-- TODO: DeLoach
+- Users have access to a forum where they can share information on traditions
+  and experiences that are unique to UF.
+- Users are introduced to other users that have similar interests, hobbies, or
+  studies. 
 
 ## For graduates in industry
 
@@ -396,11 +423,16 @@ _Spring 2022_
 
 #### Conversation
 
-- TODO: DeLoach
+- How do I find out if the material taught in class is still up to date with
+  the latest trends?
+- What material needs to be added, expanded, or removed in order to best
+  prepare my students for industry?
   
 #### Confirmation
 
-- TODO: DeLoach
+- Graduates working in related careers are able to review the current material
+  and offer their insight on what revisions, if any, need to occur with the
+  curriculum.
 
 ## For teaching assistants
 
