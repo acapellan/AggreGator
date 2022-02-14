@@ -399,7 +399,6 @@ _Spring 2022_
 | As a graduate who has entered the career field, I    |
 | want to network with other alumni so that I can form |
 | business partnerships with my fellow alumni.         |
-| mentor to a younger Gator generation.                |
 
 #### Conversation
 
