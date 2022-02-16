@@ -4,7 +4,7 @@
 
 ## Authors
 
-- **[Brian Hoblin](https://github.com/GoonerBrian)**,  _SCRUM Master/Developer_
+- **[Brian Hoblin](https://github.com/GoonerBrian)**, _SCRUM Master/Developer_
 - **[Alejandro Capellan](https://github.com/acapellan)**, _Project Manager/Developer_
 - **[Jacob Boney](https://github.com/jacobboney)**, _Developer_
 - **[Steven DeLoach](https://github.com/sfdeloach)**, _Developer_
@@ -62,3 +62,5 @@ A list of the frameworks and technologies used to build this project:
 - [Oracle Database](https://www.oracle.com/database/technologies/)
 
 ## Notes
+
+Brian testing pipeline
