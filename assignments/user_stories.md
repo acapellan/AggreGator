@@ -11,84 +11,16 @@ _Spring 2022_
 ## Table of contents
 
 1. [For all users](#For-all-users)
-2. [For prospective students](#For-prospective-students)
-3. [For undergraduate students](#For-undergraduate-students)
-4. [For postgraduate students](#For-postgraduate-students)
-5. [For transfer students](#For-transfer-students)
-6. [For graduates working in industry](#For-graduates-in-industry)
-7. [For instructors](#For-instructors)
-8. [For teaching assistants](#For-teaching-assistants)
+2. [For all students](#For-all-students)
+3. [For prospective students](#For-prospective-students)
+4. [For undergraduate students](#For-undergraduate-students)
+5. [For postgraduate students](#For-postgraduate-students)
+6. [For transfer students](#For-transfer-students)
+7. [For graduates working in industry](#For-graduates-in-industry)
+8. [For instructors](#For-instructors)
+9. [For teaching assistants](#For-teaching-assistants)
 
 ## For all users
-
-### Find a study partner
-
-#### Card
-
-| Find a study partner                              |
-| ------------------------------------------------- |
-| As a user, I want to find a partner to help me    |
-| study and keep me encouraged so that I maintain   |
-| my motivation throughout the entire semester.     |
-
-#### Conversation
-
-- What criteria could be used to find the user a suitable study partner?
-- What types of criteria should the partner have to encourage the user to study?
-- Should each class have its own set of criteria or is there a way to generalize the data?
-
-#### Confirmation
-
-- Each user can have a general set of criteria that they’re looking for in a study partner. This can be saved in their user profile. Users can navigate to the user profile and update a menu with a few categories.
-- User can input the amount of time they wish to spend studying per week and select their available days of the week. Drop down menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
-
-### Become more marketable
-
-#### Card
-
-| Become more marketable                                |
-|-------------------------------------------------------|
-| As a user, I want to learn how to make myself         |
-| marketable to an industry so that I can have security |
-| in knowing I will find a fulfilling job.              |
-
-#### Conversation
-
-- What specific job criteria/technologies should students be familiar with?
-- What skills are the most in demand by companies?
-- What kind of career would be considered as fulfilling for the student?
-
-#### Confirmation
-
-- Provide resources aligning with the area the student is interested in.
-- Users are able to use keywords to find relevant industry material.
-- Students take a survey that helps them to develop a user profile.
-- Link user to top three upvoted pages for that industry that matches their profile.
-
-### Find a job/internship
-
-#### Card
-
-| Find a job/internship                               |
-|-----------------------------------------------------|
-| As a user, I want to find a job/internship at an    |
-| exciting company so that I can build up my resume.  |
-
-#### Conversation
-
-- Which companies are actively seeking to fill positions with students from UF?
-- Are the positions part-time, full-time, or remote? For internships, are the
-  positions paid or unpaid? Where are the positions located?
-- What type of companies are students interested in working for?
-  
-#### Confirmation
-
-- Companies actively recruit applicants based on the studies and interests.
-- Students are able to sort/filter job listings based on criteria. For example,
-  list all paid full-time positions located in Florida.
-- Even if students do not apply for a position, they are able to view listings
-  and rate them based on their interest. Additional listings based on their
-  ratings are highlighted as aligning with the student's interests.
 
 ### Searching for topic
 
@@ -179,6 +111,77 @@ _Spring 2022_
 - Users have the option of receiving an email or a notification upon sign in
   to the website when new information is available that may be of interest to
   them.
+
+## For all students
+
+### Find a study partner
+
+#### Card
+
+| Find a study partner                              |
+| ------------------------------------------------- |
+| As a user, I want to find a partner to help me    |
+| study and keep me encouraged so that I maintain   |
+| my motivation throughout the entire semester.     |
+
+#### Conversation
+
+- What criteria could be used to find the user a suitable study partner?
+- What types of criteria should the partner have to encourage the user to study?
+- Should each class have its own set of criteria or is there a way to generalize the data?
+
+#### Confirmation
+
+- Each user can have a general set of criteria that they’re looking for in a study partner. This can be saved in their user profile. Users can navigate to the user profile and update a menu with a few categories.
+- User can input the amount of time they wish to spend studying per week and select their available days of the week. Drop down menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
+
+### Become more marketable
+
+#### Card
+
+| Become more marketable                                |
+|-------------------------------------------------------|
+| As a user, I want to learn how to make myself         |
+| marketable to an industry so that I can have security |
+| in knowing I will find a fulfilling job.              |
+
+#### Conversation
+
+- What specific job criteria/technologies should students be familiar with?
+- What skills are the most in demand by companies?
+- What kind of career would be considered as fulfilling for the student?
+
+#### Confirmation
+
+- Provide resources aligning with the area the student is interested in.
+- Users are able to use keywords to find relevant industry material.
+- Students take a survey that helps them to develop a user profile.
+- Link user to top three upvoted pages for that industry that matches their profile.
+
+### Find a job/internship
+
+#### Card
+
+| Find a job/internship                               |
+|-----------------------------------------------------|
+| As a user, I want to find a job/internship at an    |
+| exciting company so that I can build up my resume.  |
+
+#### Conversation
+
+- Which companies are actively seeking to fill positions with students from UF?
+- Are the positions part-time, full-time, or remote? For internships, are the
+  positions paid or unpaid? Where are the positions located?
+- What type of companies are students interested in working for?
+  
+#### Confirmation
+
+- Companies actively recruit applicants based on the studies and interests.
+- Students are able to sort/filter job listings based on criteria. For example,
+  list all paid full-time positions located in Florida.
+- Even if students do not apply for a position, they are able to view listings
+  and rate them based on their interest. Additional listings based on their
+  ratings are highlighted as aligning with the student's interests.
 
 ## For prospective students
 
