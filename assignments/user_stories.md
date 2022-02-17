@@ -33,7 +33,7 @@ _Spring 2022_
 
 #### Conversation
 
-- What search method(s) would the user like to utilize? (i.e. keyword-based searches, UI buttons/tiles to gradually drill down into a topic, etc.)
+- What search method(s) would the user like to utilize? (i.e., keyword-based searches, UI buttons/tiles to gradually drill down into a topic, etc.)
 - Would the user want to filter by most popular pages on a topic?
 
 #### Confirmation
