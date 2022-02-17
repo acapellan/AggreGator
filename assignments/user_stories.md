@@ -22,7 +22,7 @@ _Spring 2022_
 
 ## For all users
 
-### Searching for topic
+### Searching for topics
 
 #### Card
 
@@ -33,7 +33,7 @@ _Spring 2022_
 
 #### Conversation
 
-- What search method(s) would the user like to utilize? (i.e. keyword based searches, UI bottons/tiles to gradually drill down into a topic, etc.)
+- What search method(s) would the user like to utilize? (i.e. keyword-based searches, UI buttons/tiles to gradually drill down into a topic, etc.)
 - Would the user want to filter by most popular pages on a topic?
 
 #### Confirmation
@@ -53,9 +53,9 @@ _Spring 2022_
 
 #### Conversation
 
-- what defines quality information for the user?
+- What defines quality information for the user?
 - Besides approval ratings or timestamps, are there other metrics we could use?
-- what would be the best way to sort this information?
+- What would be the best way to sort this information?
 
 #### Confirmation
 
@@ -83,7 +83,7 @@ _Spring 2022_
 
 - A "bookmark" option will be available at the top of each page.
 - Provide the option for the user to organize their bookmarks into folders.
-- A bookmark drop down menu will be accessible on all pages providing access to the bookmarks.
+- A bookmark dropdown menu will be accessible on all pages providing access to the bookmarks.
 - The user will be able to rename bookmarks to better identify the contents.
 
 ### Request specific topics
@@ -104,7 +104,7 @@ _Spring 2022_
 
 #### Confirmation
 
-- Topics are categorized based on field of study, industry-type, and other
+- Topics are categorized based on field of study, industry type, and other
   metrics.
 - Topics are from a predetermined list, but users have the ability to suggest
   new ones.
@@ -133,7 +133,7 @@ _Spring 2022_
 #### Confirmation
 
 - Each user can have a general set of criteria that they’re looking for in a study partner. This can be saved in their user profile. Users can navigate to the user profile and update a menu with a few categories.
-- User can input the amount of time they wish to spend studying per week and select their available days of the week. Drop down menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
+- User can input the amount of time they wish to spend studying per week and select their available days of the week. Dropdown menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
 
 ### Become more marketable
 
@@ -148,7 +148,7 @@ _Spring 2022_
 #### Conversation
 
 - What specific job criteria/technologies should students be familiar with?
-- What skills are the most in demand by companies?
+- What skills are the most in-demand by companies?
 - What kind of career would be considered as fulfilling for the student?
 
 #### Confirmation
@@ -220,7 +220,7 @@ _Spring 2022_
 
 - Could we provide prospective students with a survey that would provide suggestions on majors?
 - Should we get the information needed from UF's major description, or is there another database we could use?
-- Would we need different questions on our survey depending on the individual circumstances? (e.g. working full-time, kids, expected time commitment to a degree, etc.)
+- Would we need different questions on our survey depending on the individual circumstances? (e.g., working full-time, kids, expected time commitment to a degree, etc.)
 
 #### Confirmation
 
@@ -274,7 +274,7 @@ _Spring 2022_
   current coursework. When the semester is finished, automated emails are sent
   asking students to complete a survey of the course they completed.
 - Only verified students who took a course may rate the posts of other students.
-- A curated list with the hightest ranking responses are displayed first.
+- A curated list with the highest ranking responses are displayed first.
 
 ### Learn more about electives
 
@@ -340,7 +340,7 @@ _Spring 2022_
 #### Confirmation
 
 - Allow postgraduate students to communicate with students and/or professors on how to be successful.
-- Provide a curated list of articles and/or videos on having a successful postgrad experience. 
+- Provide a curated list of articles and/or videos on having a successful postgraduate experience. 
 
 ## For transfer students
 
@@ -382,16 +382,16 @@ _Spring 2022_
 
 #### Conversation
 
-- What areas to you want to provide mentorship in? Are there specific tools, methodologies, industries that you want to focus your mentoring in?
+- What areas do you want to provide mentorship in? Are there specific tools, methodologies, industries that you want to focus your mentoring in?
 - How much time do you want to commit to mentoring?
-- How many people to you want to mentoring?
+- How many people do you want to mentor?
 - What level of mentee do you want to mentor?
 
 #### Confirmation
 
 - Provide a way for mentor users to create a profile that is searchable by name and keywords of specializations.
 - Ensure the profile clearly states the mentor's availability for taking on a new mentee.
-- Ensure the profile clearly states the mentor's expectations of the mentee (i.e. the mentee's schedule, freshman/sophomore looking for internship help, junior/senior looking for for job advise, etc.).
+- Ensure the profile clearly states the mentor's expectations of the mentee (i.e., the mentee's schedule, freshman/sophomore looking for internship help, junior/senior looking for job advice, etc.).
 
 ### Network with alumni
 
@@ -502,7 +502,7 @@ _Spring 2022_
 #### Conversation
 
 - How could we denote that a student is a teaching assistant?
-- Should we combine all teaching assistants into one pool or have seperate forums depending on their college?
+- Should we combine all teaching assistants into one pool or have separate forums depending on their college?
 
 #### Confirmation
 
