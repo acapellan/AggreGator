@@ -16,7 +16,7 @@ _Spring 2022_
 4. [For undergraduate students](#For-undergraduate-students)
 5. [For postgraduate students](#For-postgraduate-students)
 6. [For transfer students](#For-transfer-students)
-7. [For graduates working in industry](#For-graduates-in-industry)
+7. [For graduates in industry](#For-graduates-in-industry)
 8. [For instructors](#For-instructors)
 9. [For teaching assistants](#For-teaching-assistants)
 
