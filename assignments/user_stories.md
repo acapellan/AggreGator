@@ -22,11 +22,11 @@ _Spring 2022_
 
 ## For all users
 
-### Searching for topics
+### Search for topics
 
 #### Card
 
-| Search for a topic                                  |
+| Search for a topics                                 |
 | --------------------------------------------------- |
 | As a user, I would like to search for my desired    |
 | topic so I don’t waste time with irrelevant topics. |
