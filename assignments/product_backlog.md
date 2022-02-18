@@ -22,7 +22,7 @@ this document.
 *\
 ```
 
-|  #  | Item                                               | Type                  |
+|  Priority  | Item                                               | Type                  |
 | :-: | -------------------------------------------------- | --------------------- |
 |  1  | Initial project setup                              | Knowledge Acquisition |
 |  2  | Set up database and backend API                    | Knowledge Acquisition |
@@ -63,11 +63,12 @@ fibonacci-like sequence:
 
 `\* TODO: Each member comes with their scores, final agreed upon score needs to be entered *\`
 
-|  #  | Item                                               | AC  | BH  | JB  | SD  | Final |
+|  Priority  | Item                                        | AC  | BH  | JB  | SD  | Final Estimation |
 | :-: | -------------------------------------------------- | :-: | :-: | :-: | :-: | :---: |
 |  1  | Initial project setup                              |     |     |     |     |       |
-|  2  | Set up database and backend API                    |     |     |     |     |       |
-|  3  | Design frontend route                              |     |     |     |     |       |
+|  2  | Develop database tables                   |     |     |     |     |       |
+|  2  | Set up backend API                    |     |     |     |     |       |
+|  3  | Design initial frontend pages                              |     |     |     |     |       |
 |  4  | Search for topics                                  |     |     |     |     |       |
 |  5  | Sort by metrics                                    |     |     |     |     |       |
 |  6  | Bookmark topics                                    |     |     |     |     |       |
