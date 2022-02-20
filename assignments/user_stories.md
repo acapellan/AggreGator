@@ -11,15 +11,108 @@ _Spring 2022_
 ## Table of contents
 
 1. [For all users](#For-all-users)
-2. [For prospective students](#For-prospective-students)
-3. [For undergraduate students](#For-undergraduate-students)
-4. [For postgraduate students](#For-postgraduate-students)
-5. [For transfer students](#For-transfer-students)
-6. [For graduates working in industry](#For-graduates-in-industry)
-7. [For instructors](#For-instructors)
-8. [For teaching assistants](#For-teaching-assistants)
+2. [For all students](#For-all-students)
+3. [For prospective students](#For-prospective-students)
+4. [For undergraduate students](#For-undergraduate-students)
+5. [For postgraduate students](#For-postgraduate-students)
+6. [For transfer students](#For-transfer-students)
+7. [For graduates in industry](#For-graduates-in-industry)
+8. [For instructors](#For-instructors)
+9. [For teaching assistants](#For-teaching-assistants)
 
 ## For all users
+
+### Search for topics
+
+#### Card
+
+| Search for a topics                                 |
+| --------------------------------------------------- |
+| As a user, I would like to search for my desired    |
+| topic so I don’t waste time with irrelevant topics. |
+
+#### Conversation
+
+- What search method(s) would the user like to utilize? (i.e., keyword-based searches, UI buttons/tiles to gradually drill down into a topic, etc.)
+- Would the user want to filter by most popular pages on a topic?
+
+#### Confirmation
+
+- Provide option for user to search by keyword and by finding topics through an indexing system.
+- Allow user to filter pages by most updated pages.
+
+### Sort by metrics
+
+#### Card
+
+| Sort by metrics                                    |
+| -------------------------------------------------- |
+| As a user, I would like to sort by metrics such as |
+| approval ratings or timestamps so that I know I am |
+| looking at quality information.                    |
+
+#### Conversation
+
+- What defines quality information for the user?
+- Besides approval ratings or timestamps, are there other metrics we could use?
+- What would be the best way to sort this information?
+
+#### Confirmation
+
+- When searching for information, the user will be given a toolbar where they can sort a list of information by their chosen metrics.
+- The user will be shown the number of "thumbs-up" or "thumbs down" per video, and the list will be sorted by most liked.
+- Each video will have timestamps links per video topic. 
+
+### Bookmark topics
+
+#### Card
+
+| Bookmark topics                                       |
+| ----------------------------------------------------- |
+| As a user, I would like to save or bookmark topics so |
+| that I may access them again more quickly.            |
+
+#### Conversation
+
+- How would a user save desired pages?
+- Would the user want to organize their bookmarks?
+- How would a user access their bookmarks?
+- How would a user know where each bookmark leads?
+
+#### Confirmation
+
+- A "bookmark" option will be available at the top of each page.
+- Provide the option for the user to organize their bookmarks into folders.
+- A bookmark dropdown menu will be accessible on all pages providing access to the bookmarks.
+- The user will be able to rename bookmarks to better identify the contents.
+
+### Request specific topics
+
+#### Card
+
+| Request specific topics                             |
+| --------------------------------------------------- |
+| As I user, I would like to request topics so that I |
+| can receive information tailored to me.             |
+
+#### Conversation
+
+- Are the topics categorized?
+- Are the topics from a predetermined list of topics or are they customized?
+- How do I receive notifications when there is new information available on a
+  requested topic?
+
+#### Confirmation
+
+- Topics are categorized based on field of study, industry type, and other
+  metrics.
+- Topics are from a predetermined list, but users have the ability to suggest
+  new ones.
+- Users have the option of receiving an email or a notification upon sign in
+  to the website when new information is available that may be of interest to
+  them.
+
+## For all students
 
 ### Find a study partner
 
@@ -40,7 +133,7 @@ _Spring 2022_
 #### Confirmation
 
 - Each user can have a general set of criteria that they’re looking for in a study partner. This can be saved in their user profile. Users can navigate to the user profile and update a menu with a few categories.
-- User can input the amount of time they wish to spend studying per week and select their available days of the week. Drop down menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
+- User can input the amount of time they wish to spend studying per week and select their available days of the week. Dropdown menu can include days of the week to add and available time slots. Then the menu would add up the total time to spend studying. The system would also have a way to ensure the user does not schedule studying time during a class or a blocked-out time slot (user preferences).
 
 ### Become more marketable
 
@@ -55,7 +148,7 @@ _Spring 2022_
 #### Conversation
 
 - What specific job criteria/technologies should students be familiar with?
-- What skills are the most in demand by companies?
+- What skills are the most in-demand by companies?
 - What kind of career would be considered as fulfilling for the student?
 
 #### Confirmation
@@ -90,96 +183,6 @@ _Spring 2022_
   and rate them based on their interest. Additional listings based on their
   ratings are highlighted as aligning with the student's interests.
 
-### Searching for topic
-
-#### Card
-
-| Search for a topic                                  |
-| --------------------------------------------------- |
-| As a user, I would like to search for my desired    |
-| topic so I don’t waste time with irrelevant topics. |
-
-#### Conversation
-
-- What search method(s) would the user like to utilize? (i.e. keyword based searches, UI bottons/tiles to gradually drill down into a topic, etc.)
-- Would the user want to filter by most popular pages on a topic?
-
-#### Confirmation
-
-- Provide option for user to search by keyword and by finding topics through an indexing system.
-- Allow user to filter pages by most updated pages.
-
-### Sort by metrics
-
-#### Card
-
-| Sort by metrics                                    |
-| -------------------------------------------------- |
-| As a user, I would like to sort by metrics such as |
-| approval ratings or timestamps so that I know I am |
-| looking at quality information.                    |
-
-#### Conversation
-
-- what defines quality information for the user?
-- Besides approval ratings or timestamps, are there other metrics we could use?
-- what would be the best way to sort this information?
-
-#### Confirmation
-
-- When searching for information, the user will be given a toolbar where they can sort a list of information by their chosen metrics.
-- The user will be shown the number of "thumbs-up" or "thumbs down" per video, and the list will be sorted by most liked.
-- Each video will have timestamps links per video topic. 
-
-### Bookmark topics
-
-#### Card
-
-| Bookmark topics                                       |
-| ----------------------------------------------------- |
-| As a user, I would like to save or bookmark topics so |
-| that I may access them again more quickly.            |
-
-#### Conversation
-
-- How would a user save desired pages?
-- Would the user want to organize their bookmarks?
-- How would a user access their bookmarks?
-- How would a user know where each bookmark leads?
-
-#### Confirmation
-
-- A "bookmark" option will be available at the top of each page.
-- Provide the option for the user to organize their bookmarks into folders.
-- A bookmark drop down menu will be accessible on all pages providing access to the bookmarks.
-- The user will be able to rename bookmarks to better identify the contents.
-
-### Request specific topics
-
-#### Card
-
-| Request specific topics                             |
-| --------------------------------------------------- |
-| As I user, I would like to request topics so that I |
-| can receive information tailored to me.             |
-
-#### Conversation
-
-- Are the topics categorized?
-- Are the topics from a predetermined list of topics or are they customized?
-- How do I receive notifications when there is new information available on a
-  requested topic?
-
-#### Confirmation
-
-- Topics are categorized based on field of study, industry-type, and other
-  metrics.
-- Topics are from a predetermined list, but users have the ability to suggest
-  new ones.
-- Users have the option of receiving an email or a notification upon sign in
-  to the website when new information is available that may be of interest to
-  them.
-
 ## For prospective students
 
 ### Find out if UF is right for me
@@ -200,7 +203,7 @@ _Spring 2022_
 #### Confirmation
 
 - Provide a page with links to campus clubs, tours, organizations, areas of research, etc.
-- Direct user to articles on how to choice a university that is right for you.
+- Direct user to articles on how to choose a university that is right for you.
 
 ### Learn about degrees/programs
 
@@ -217,7 +220,7 @@ _Spring 2022_
 
 - Could we provide prospective students with a survey that would provide suggestions on majors?
 - Should we get the information needed from UF's major description, or is there another database we could use?
-- Would we need different questions on our survey depending on the individual circumstances? (e.g. working full-time, kids, expected time commitment to a degree, etc.)
+- Would we need different questions on our survey depending on the individual circumstances? (e.g., working full-time, kids, expected time commitment to a degree, etc.)
 
 #### Confirmation
 
@@ -264,14 +267,14 @@ _Spring 2022_
 - How are prior students encouraged to share information they have on their
   experience taking a course?
 - How are students able to discern the information they receive is reliable?
-- 
+  
 #### Confirmation
 
 - The service encourages users to complete a profile that includes their
   current coursework. When the semester is finished, automated emails are sent
   asking students to complete a survey of the course they completed.
 - Only verified students who took a course may rate the posts of other students.
-- A curated list with the hightest ranking responses are displayed first.
+- A curated list with the highest ranking responses are displayed first.
 
 ### Learn more about electives
 
@@ -337,7 +340,7 @@ _Spring 2022_
 #### Confirmation
 
 - Allow postgraduate students to communicate with students and/or professors on how to be successful.
-- Provide a curated list of articles and/or videos on having a successful postgrad experience. 
+- Provide a curated list of articles and/or videos on having a successful postgraduate experience. 
 
 ## For transfer students
 
@@ -356,7 +359,7 @@ _Spring 2022_
 
 - What are some of the traditions/experiences that are unique to UF?
 - How can I meet people with similar interests and become involved?
-- 
+
 #### Confirmation
 
 - Users have access to a forum where they can share information on traditions
@@ -379,16 +382,16 @@ _Spring 2022_
 
 #### Conversation
 
-- What areas to you want to provide mentorship in? Are there specific tools, methodologies, industries that you want to focus your mentoring in?
+- What areas do you want to provide mentorship in? Are there specific tools, methodologies, industries that you want to focus your mentoring in?
 - How much time do you want to commit to mentoring?
-- How many people to you want to mentoring?
+- How many people do you want to mentor?
 - What level of mentee do you want to mentor?
 
 #### Confirmation
 
 - Provide a way for mentor users to create a profile that is searchable by name and keywords of specializations.
 - Ensure the profile clearly states the mentor's availability for taking on a new mentee.
-- Ensure the profile clearly states the mentor's expectations of the mentee (i.e. the mentee's schedule, freshman/sophomore looking for internship help, junior/senior looking for for job advise, etc.).
+- Ensure the profile clearly states the mentor's expectations of the mentee (i.e., the mentee's schedule, freshman/sophomore looking for internship help, junior/senior looking for job advice, etc.).
 
 ### Network with alumni
 
@@ -499,7 +502,7 @@ _Spring 2022_
 #### Conversation
 
 - How could we denote that a student is a teaching assistant?
-- Should we combine all teaching assistants into one pool or have seperate forums depending on their college?
+- Should we combine all teaching assistants into one pool or have separate forums depending on their college?
 
 #### Confirmation
 
