@@ -203,7 +203,7 @@ _Spring 2022_
 #### Confirmation
 
 - Provide a page with links to campus clubs, tours, organizations, areas of research, etc.
-- Direct user to articles on how to choice a university that is right for you.
+- Direct user to articles on how to choose a university that is right for you.
 
 ### Learn about degrees/programs
 
