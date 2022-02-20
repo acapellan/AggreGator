@@ -10,38 +10,91 @@ _Spring 2022_
 
 ## Product Backlog
 
-Product backlog items (PBIs) were created from user stories and assigned a number for identification.
-Additional knowledge acquisition PBIs were added to the backlog in preparation for the first sprint.
-Priority has not yet been assigned, and will be done so after the team completes a round of planning
-poker.
+User stories were broken down into items that adhere to DEEP principles. These tasks were then added as
+items to the product backlog. An identification number was assigned to each user story and its
+associated tasks for reference. For instance ID #12 refers to the user story "Find out if UF is right
+for me." ID #12.1 and #12.2 refer to the individual tasks associated with user story #12.
 
-| ID# | Item                                               | Type                  |
-| :-: | -------------------------------------------------- | --------------------- |
-|  1  | Initial project setup                              | Knowledge Acquisition |
-|  2  | Develop database tables                            | Knowledge Acquisition |
-|  3  | Set up backend API                                 | Knowledge Acquisition |
-|  4  | Design initial frontend pages                      | Knowledge Acquisition |
-|  5  | Search for topics                                  | Feature               |
-|  6  | Sort by metrics                                    | Feature               |
-|  7  | Bookmark topics                                    | Feature               |
-|  8  | Request specific topics                            | Feature               |
-|  9  | Find a study partner                               | Feature               |
-| 10  | Become more marketable                             | Feature               |
-| 11  | Find a job/internship                              | Feature               |
-| 12  | Find out if UF is right for me                     | Feature               |
-| 13  | Learn about degrees/programs                       | Feature               |
-| 14  | Do well in a current class                         | Feature               |
-| 15  | Prepare for an upcoming class                      | Feature               |
-| 16  | Learn more about electives                         | Feature               |
-| 17  | Learn if attending graduate school is right for me | Feature               |
-| 18  | Get advice on how to be successful                 | Feature               |
-| 19  | Become a part of the UF community                  | Feature               |
-| 20  | A desire to pay it forward                         | Feature               |
-| 21  | Network with alumni                                | Feature               |
-| 22  | Receive feedback from courses                      | Feature               |
-| 23  | Keep the material relevant                         | Feature               |
-| 24  | Additional resources for help                      | Feature               |
-| 25  | Find Work, Life, Study Balance                     | Feature               |
+Additional knowledge acquisition product backlog items (PBIs) were added to the backlog in preparation
+for the first sprint. The team did not assign a priority to the PBIs at this stage. PBIs will be
+rearranged in their priority after the team completes a round of planning poker.
+
+| ID#  | Item                                          | Type/Service          |
+| ---- | --------------------------------------------- | --------------------- |
+| 1    | Initial project setup                         | Knowledge Acquisition |
+| 1.1  | ▸ establish code review & acceptance criteria | repository            |
+| 1.2  | ▸ develop initial tables and schema           | database              |
+| 1.3  | ▸ set up initial backend routes               | api                   |
+| 1.4  | ▸ write initial tests                         | api                   |
+| 1.5  | ▸ design main page                            | frontend              |
+| 1.6  | ▸ write initial tests                         | frontend              |
+| 1.7  | ▸ specify data needed from AJAX calls         | frontend/api          |
+| 1.8  | ▸ establish page styling                      | frontend              |
+| 2    | Search for topics                             | Feature               |
+| 2.1  | ▸ create topics schema                        | database              |
+| 2.1  | ▸ write SQL query                             | database              |
+| 2.2  | ▸ code backend                                | api                   |
+| 2.3  | ▸ create route                                | frontend              |
+| 2.4  | ▸ create page layout w/ filter option UI      | frontend              |
+| 2.5  | ▸ code filter function                        | frontend              |
+| 3    | Sort by metrics                               | Feature               |
+| 3.1  | ▸ code toolbar UI                             | frontend              |
+| 3.2  | ▸ code sort function                          | frontend              |
+| 3.3  | ▸ connect YouTube API to frontend             | frontend              |
+| 3.4  | ▸ update/create tables for support            | database              |
+| 4    | Bookmark topics                               | Feature               |
+| 4.1  | ▸ code bookmark UI functionality              | frontend              |
+| 4.2  | ▸ create user schema                          | database              |
+| 4.3  | ▸ create bookmark schema                      | database              |
+| 4.4  | ▸ add authentication to site                  | api/database          |
+| 4.5  | ▸ code backend                                | api                   |
+| 4.6  | ▸ write CRUD operations for bookmark table    | database              |
+| 4.6  | ▸ add user UI functionality for feature       | database              |
+| 5    | Request specific topics                       | Feature               |
+| 5.1  | ▸ update tables for support                   | database              |
+| 5.2  | ▸ code UI feature for suggestions             | frontend              |
+| 5.3  | ▸ setup email delivery service                | frontend/api/database |
+| 6    | Find a study partner                          | Feature               |
+| 6.1  | ▸ expand user profile                         | frontend/api/database |
+| 6.1  | ▸ create UI for scheduling                    | frontend              |
+| 6.1  | ▸ develop business logic for matching         | api/database          |
+| 7    | Become more marketable                        | Feature               |
+| 7.1  | ▸ code survey UI                              | frontend              |
+| 7.1  | ▸ expand user profile                         | database              |
+| 7.1  | ▸ develop business logic for industry         | api                   |
+| 8    | Find a job/internship                         | Feature               |
+| 8.1  | ▸ add user profile for companies              | database              |
+| 8.1  | ▸ code job listing UI                         | frontend              |
+| 8.1  | ▸ create job schema                           | database              |
+| 8.1  | ▸ code business logic                         | api                   |
+| 9    | Find out if UF is right for me                | Feature               |
+| 9.1  | ▸                                             |                       |
+| 10   | Do well in a current class                    | Feature               |
+| 10.1 | ▸                                             |                       |
+| 11   | Learn about degrees/programs                  | Feature               |
+| 11.1 | ▸                                             |                       |
+| 12   | Prepare for an upcoming class                 | Feature               |
+| 12.1 | ▸                                             |                       |
+| 13   | Learn more about electives                    | Feature               |
+| 13.1 | ▸                                             |                       |
+| 14   | Learn about graduate school                   | Feature               |
+| 14.1 | ▸                                             |                       |
+| 15   | Get advice on how to be successful            | Feature               |
+| 15.1 | ▸                                             |                       |
+| 16   | A desire to pay it forward                    | Feature               |
+| 16.1 | ▸                                             |                       |
+| 17   | Become a part of the UF community             | Feature               |
+| 17.1 | ▸                                             |                       |
+| 18   | Receive feedback from courses                 | Feature               |
+| 18.1 | ▸                                             |                       |
+| 19   | Network with alumni                           | Feature               |
+| 19.1 | ▸                                             |                       |
+| 20   | Keep the material relevant                    | Feature               |
+| 20.1 | ▸                                             |                       |
+| 21   | Additional resources for help                 | Feature               |
+| 21.1 | ▸                                             |                       |
+| 22   | Find Work, Life, Study Balance                | Feature               |
+| 22.1 | ▸                                             |                       |
 
 ## Planning Poker
 
