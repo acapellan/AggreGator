@@ -135,14 +135,15 @@ rearranged in their priority after the team completes a round of planning poker.
 
 ## Planning Poker
 
-Each team member independently assigned points to each set of tasks based on their thoughts on the amount
-of time and effort it would require to complete. Members came up with their own numbers before sharing
-their thoughts with the group in an effort to avoid groupthink. Each member's initial score is located
-in the associated column labeled with their initials.
+Each team member independently assigned points on a relative scale to each set of tasks based on their
+thoughts on the amount of time and effort it would require to complete. Members came up with their own
+numbers before sharing their thoughts with the group in an effort to avoid groupthink. Each member's
+initial score is located in the associated column labeled with their initials.
 
 The final and agreed upon score is indicated in the final estimation column. Items with disparate scores
-were resolved through team discussion. A summary of some of these discussions is listed under the table.
-Relative story points were assigned a value from the following fibonacci-like sequence:
+were resolved through team discussion with the Product Owner having the final say. A summary of some
+of these discussions is listed under the table. Relative story points were assigned a value from the
+following fibonacci-like sequence:
 
 > 0, ½, 1, 2, 3, 5, 8, 13, 21, 34, 50, 100, and ?
 
@@ -173,11 +174,11 @@ Relative story points were assigned a value from the following fibonacci-like se
 
 ### Discussion
 
-At the conclusion of planning poker, the product backlog was sorted from smallest final estimation to
-largest. The one exception was PBI #2. The team decided this knowledge acquisition item needed to be
-near the top to ensure it was included in the first sprint.
+Once planning poker was completed, the order of the tasks were rearranged to place the smaller items
+towards the top of the list and the larger items at the bottom of the list. The one exception was the
+initial project setup, which must be completed first before any other task can begin.
 
-In addition, every team member also came up with a different estimation for PBI #2. During the discussion,
+In addition, every team member also came up with a different estimation for item #1. During the discussion,
 it was discovered that one team member had the most experience with databases, and they were able explain
 how the item would be more complex than expected. The team agreed and went with his recommendation.
 
