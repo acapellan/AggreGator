@@ -19,13 +19,14 @@ A list of the frameworks and technologies used to build this project:
 
 - [React](https://reactjs.org/), single-page application for the frontend
 - [Node.js](https://nodejs.org/en/) 16.13.2, Javascript runtime on the server
-- [npm](https://www.npmjs.com/) 8.1.2, package manager for Node.js
-- [Express](https://expressjs.com/) (via npm) for backend DB CRUD operations
+- [npm](https://www.npmjs.com/) 8.1.2, package manager for Nodejs
+- [Express](https://expressjs.com/) (via npm) for backend API operations
+- [Bootswatch](https://bootswatch.com/), Bootstrap-compatible CSS framework
+- [MongoDB](https://www.mongodb.com/), NoSQL database
+- [Oracle Database](https://www.oracle.com/database/technologies/), SQL database
+- [Visual Studio Code](https://code.visualstudio.com/), our team's preferred IDE
 - [Mocha](https://mochajs.org/) (via npm), JavaScript test framework
 - [Chai](https://www.chaijs.com/) (via npm), assertion library
-- [Visual Studio Code](https://code.visualstudio.com/), our team's preferred IDE
-- [Bootswatch](https://bootswatch.com/), for CSS styling
-- [Oracle Database](https://www.oracle.com/database/technologies/)
 
 ## Project Updates
 
@@ -35,8 +36,9 @@ A list of the frameworks and technologies used to build this project:
 - [x] Product Backlog Completed
 - [x] Planning Poker Completed
 - [x] Sprint 1 Backlog Completed
-- [ ] Software Architecture and System Context Model In Progress
-- [ ] Sprint 0 Product Plan and Design Presentation In Progress
+- [x] Software Architecture and System Context Model In Progress
+- [x] Sprint 0 Product Plan and Design Presentation In Progress
+- [ ] Sprint 1
 
 ## Forking
 
