@@ -40,9 +40,10 @@ to reflect new insights.
 answer this
 - one member drowning out the others with their ideas, not allowing others to contribute?
 - overwhelmed by the size and scope of the project?
-- 
 
 ### Where are some opportunities to do things differently?
+
+- 
 
 ### What should we start doing or improve?
 
