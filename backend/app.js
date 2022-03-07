@@ -1,6 +1,10 @@
 // Module dependencies
 const express = require('express');
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const app = express();
+
+passport.use(new GoogleStrategy());
 
 // map of valid api keys, typically mapped to account info with some sort of database like redis.
 // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious behavior etc.
