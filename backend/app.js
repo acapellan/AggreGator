@@ -1,18 +1,14 @@
-// source credit: https://github.com/expressjs/express/blob/master/examples/web-service/index.js
-
 // Module dependencies
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5000;
 
 // map of valid api keys, typically mapped to account info with some sort of database like redis.
 // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious behavior etc.
 const apiKeys = ['foo', 'bar', 'baz'];
 
-// Create an error with status--this property can be used in our
-// custom error handler (Connect respects this property as well)
-let error = (status, msg) => {
-  let err = new Error(msg);
+// An error with status, this property can be used in our custom error handler
+const error = (status, msg) => {
+  const err = new Error(msg);
   err.status = status;
   return err;
 };
@@ -57,17 +53,17 @@ app.use('/api', (req, res, next) => {
 
 // API key is valid, expose the data
 app.get('/api/users', (req, res, next) => {
-  // example: http://localhost:3000/api/users/?api-key=foo
+  // example: http://localhost:5000/api/users/?api-key=foo
   res.send(users);
 });
 
 app.get('/api/repos', (req, res, next) => {
-  // example: http://localhost:3000/api/repos/?api-key=foo
+  // example: http://localhost:5000/api/repos/?api-key=foo
   res.send(repos);
 });
 
 app.get('/api/user/:name/repos', (req, res, next) => {
-  // example: http://localhost:3000/api/user/Alejandro/repos/?api-key=foo
+  // example: http://localhost:5000/api/user/Alejandro/repos/?api-key=foo
   const name = req.params.name;
   const user = userRepos[name];
 
@@ -94,8 +90,10 @@ app.use((req, res) => {
   res.send({error: "Sorry, can't find that"});
 });
 
-app.listen(port, () => {
-  console.log(`AggreGator API started on port ${port}`);
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`AggreGator API started on port ${PORT}`);
 });
 
 module.exports = app;

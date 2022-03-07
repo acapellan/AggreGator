@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "AggreGator backend API to Oracle DBMS",
   "main": "app.js",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
   "scripts": {
+    "start": "node app.js",
     "test": "mocha --exit"
   },
   "author": "Brian Hoblin, Alejandro Capellan, Jacob Boney, and Steven DeLoach",
