@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "mocha --exit"
   },
   "author": "Brian Hoblin, Alejandro Capellan, Jacob Boney, and Steven DeLoach",

@@ -2,17 +2,46 @@
 const express = require('express');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const keys = require('./config/keys');
+
 const app = express();
 
-passport.use(new GoogleStrategy());
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID: keys.google.id,
+      clientSecret: keys.google.secret,
+      callbackURL: '/auth/google/callback'
+    },
+    function (accessToken, refreshToken, profile, cb) {
+      console.log(`accessToken: ${accessToken}`);
+      console.log(`refreshToken: ${refreshToken}`);
+      console.log(JSON.stringify(profile, null, 2));
+    }
+  )
+);
+
+app.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']}));
+
+app.get(
+  '/auth/google/callback',
+  passport.authenticate('google', {failureRedirect: '/login'}),
+  function (req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('/');
+  }
+);
+
+/**************************************************************************************************/
 
 // map of valid api keys, typically mapped to account info with some sort of database like redis.
 // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious behavior etc.
 const apiKeys = ['foo', 'bar', 'baz'];
 
-// An error with status, this property can be used in our custom error handler
-const error = (status, msg) => {
-  const err = new Error(msg);
+// Create an error with status--this property can be used in our
+// custom error handler (Connect respects this property as well)
+let error = (status, msg) => {
+  let err = new Error(msg);
   err.status = status;
   return err;
 };
@@ -93,6 +122,8 @@ app.use((req, res) => {
   res.status(404);
   res.send({error: "Sorry, can't find that"});
 });
+
+/**************************************************************************************************/
 
 const PORT = process.env.PORT || 5000;
 
