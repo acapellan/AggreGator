@@ -7,12 +7,7 @@ let keys;
 try {
   keys = require('./config/keys');
 } catch (err) {
-  keys = {
-    google: {
-      id: 'fake!',
-      secret: 'shh!'
-    }
-  };
+  keys = require('./config/fakeKeys');
 }
 
 const app = express();
