@@ -2,7 +2,18 @@
 const express = require('express');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = require('./config/keys');
+let keys;
+
+try {
+  keys = require('./config/keys');
+} catch (err) {
+  keys = {
+    google: {
+      id: 'fake!',
+      secret: 'shh!'
+    }
+  };
+}
 
 const app = express();
 
