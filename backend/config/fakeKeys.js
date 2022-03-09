@@ -6,4 +6,4 @@ const keys = {
   // more auth strategies to follow?
 };
 
-module.export = keys;
+module.exports = keys;
