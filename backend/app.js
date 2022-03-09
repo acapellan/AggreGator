@@ -1,13 +1,15 @@
-// import frameworks, libraries, and configurations used by the app
+// import frameworks, libraries, and configurations
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-
-// run passport service for authentication
+require('./models/User.js');
 require('./services/passport.js');
 
 // connect to database
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI, (err) => {
+  if (err) console.log(err);
+  else console.log('Mongodb is connected');
+});
 
 // create the application
 const app = express();
