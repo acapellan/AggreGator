@@ -1,13 +1,6 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-let keys;
-
-// keys are not committed to repo, fake keys are loaded to allow automated tests
-try {
-  keys = require('../config/keys');
-} catch (err) {
-  keys = require('../config/fakeKeys');
-}
+const keys = require('../config/keys');
 
 passport.use(
   new GoogleStrategy(
