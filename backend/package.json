@@ -15,6 +15,7 @@
   "author": "Brian Hoblin, Alejandro Capellan, Jacob Boney, and Steven DeLoach",
   "license": "MIT",
   "dependencies": {
+    "cookie-session": "^2.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.2.5",
     "passport": "^0.5.2",

@@ -3,9 +3,8 @@ const keys = {
     id: 'fake!',
     secret: 'shh!'
   },
-  mongoURI:
-    'mongodb+srv://???'
-  // more auth strategies to follow?
+  mongoURI: 'mongodb+srv://???',
+  cookieKeys: ['chocolate chip', 'just kidding']
 };
 
 module.exports = keys;
