@@ -36,7 +36,7 @@ passport.serializeUser((user, done) => {
 // Called when a user has already logged in and is requesting information from the API. A cookie
 // is deserialized and used to lookup user info from mongoDB.
 passport.deserializeUser((id, done) => {
-  User.findById({id}).then((user) => {
+  User.findById(id).then((user) => {
     done(null, user);
   });
 });

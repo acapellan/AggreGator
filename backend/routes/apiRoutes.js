@@ -50,10 +50,6 @@ const apiRoutes = (app) => {
   });
 
   // API key is valid, expose the data
-  app.get('/api/current_user', (req, res) => {
-    res.send(req.user);
-  });
-
   app.get('/api/users', (req, res, next) => {
     // example: http://localhost:5000/api/users/?api-key=foo
     res.send(users);
