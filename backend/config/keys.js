@@ -1,10 +1,10 @@
-// keys are not committed to repo, fake keys are loaded to allow automated tests
-let keys;
-
-try {
-  keys = require('../config/realKeys');
-} catch (err) {
-  keys = require('../config/fakeKeys');
+// devKeys are not committed to repo, test keys are loaded to allow automated tests
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('../config/prodKeys');
+} else {
+  try {
+    module.exports = require('../config/devKeys');
+  } catch (err) {
+    module.exports = require('../config/testKeys');
+  }
 }
-
-module.exports = keys;
