@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "node backend/app.js"
+    "start": "npm start --prefix backend",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run start --prefix aggregator",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "cookie-session": "^2.0.0",

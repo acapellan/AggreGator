@@ -4,7 +4,7 @@
 
 ## Authors
 
-- **[Brian Hoblin](https://github.com/GoonerBrian)**,  _SCRUM Master/Developer_
+- **[Brian Hoblin](https://github.com/GoonerBrian)**, _SCRUM Master/Developer_
 - **[Alejandro Capellan](https://github.com/acapellan)**, _Project Manager/Developer_
 - **[Jacob Boney](https://github.com/jacobboney)**, _Developer_
 - **[Steven DeLoach](https://github.com/sfdeloach)**, _Developer_
@@ -21,8 +21,10 @@ A list of the frameworks and technologies used to build this project:
 - [Node.js](https://nodejs.org/en/) 16.13.2, Javascript runtime on the server
 - [npm](https://www.npmjs.com/) 8.1.2, package manager for Nodejs
 - [Express](https://expressjs.com/) (via npm) for backend API operations
+- [Passport](https://www.passportjs.org/), Simple, unobtrusive authentication for Node.js
 - [Bootswatch](https://bootswatch.com/), Bootstrap-compatible CSS framework
 - [MongoDB](https://www.mongodb.com/), NoSQL database
+- [Mongoose](https://mongoosejs.com/), Elegant MongoDB object modeling for Node.js
 - [Oracle Database](https://www.oracle.com/database/technologies/), SQL database
 - [Visual Studio Code](https://code.visualstudio.com/), our team's preferred IDE
 - [Mocha](https://mochajs.org/) (via npm), JavaScript test framework
@@ -39,6 +41,15 @@ A list of the frameworks and technologies used to build this project:
 - [x] Software Architecture and System Context Model In Progress
 - [x] Sprint 0 Product Plan and Design Presentation In Progress
 - [ ] Sprint 1
+
+## How To Start Development Mode
+
+- Create a Google ID and secret to access their [OAuth service](https://console.cloud.google.com/).
+- Create a MongoDB database from [Atlas](https://account.mongodb.com/).
+- Create `devKeys.js` in the `\backend\config` directory, using `testKeys.js` as a template. `devKeys.js`
+  will not be committed to the repo. You can make up four random `cookieKeys` using a [password generator](https://passwordsgenerator.net/).
+- From the project's root folder, run `npm run dev`. This will start the API server and React's dev
+  server.
 
 ## Forking
 
