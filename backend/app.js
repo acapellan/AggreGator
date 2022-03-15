@@ -28,6 +28,7 @@ app.use(passport.session());
 // add routes to the application
 require('./routes/authRoutes')(app);
 require('./routes/apiRoutes')(app);
+require('./routes/clientRoutes')(app);
 
 // set port, display start message
 app.listen(process.env.PORT || 5000, () => {

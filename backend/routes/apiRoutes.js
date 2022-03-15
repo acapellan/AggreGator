@@ -1,10 +1,11 @@
 const apiRoutes = (app) => {
   // map of valid api keys, typically mapped to account info with some sort of database like redis.
-  // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious behavior etc.
+  // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious
+  // behavior etc.
   const apiKeys = ['foo', 'bar', 'baz'];
 
-  // Create an error with status--this property can be used in our
-  // custom error handler (Connect respects this property as well)
+  // Create an error with status--this property can be used in our custom error handler (Connect
+  // respects this property as well)
   let error = (status, msg) => {
     let err = new Error(msg);
     err.status = status;
@@ -29,8 +30,8 @@ const apiRoutes = (app) => {
     Steven: [repos[3], repos[4]]
   };
 
-  // here we validate the API key, by mounting this middleware to /api
-  // meaning only paths prefixed with "/api" will cause this middleware to be invoked
+  // here we validate the API key, by mounting this middleware to /api meaning only paths prefixed
+  // with "/api" will cause this middleware to be invoked
   app.use('/api', (req, res, next) => {
     const key = req.query['api-key'];
 
@@ -72,17 +73,18 @@ const apiRoutes = (app) => {
     }
   });
 
-  // middleware with an arity of 4 are considered error handling middleware. When you next(err)
-  // it will be passed through the defined middleware in order, but ONLY those with an arity of 4, ignoring
-  // regular middleware.
+  // middleware with an arity of 4 are considered error handling middleware. When you next(err) it
+  // will be passed through the defined middleware in order, but ONLY those with an arity of 4,
+  // ignoring regular middleware.
   app.use((err, req, res, next) => {
-    // whatever you want here, feel free to populate properties on `err` to treat it differently in here.
+    // whatever you want here, feel free to populate properties on `err` to treat it differently in
+    // here.
     res.status(err.status || 500);
     res.send({error: err.message});
   });
 
-  // our custom JSON 404 middleware. Since it's placed last it will be the last middleware called, if all others
-  // invoke next() and do not respond.
+  // our custom JSON 404 middleware. Since it's placed last it will be the last middleware called,
+  // if all others invoke next() and do not respond.
   app.use((req, res) => {
     res.status(404);
     res.send({error: "Sorry, can't find that"});
