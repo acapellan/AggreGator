@@ -82,13 +82,6 @@ const apiRoutes = (app) => {
     res.status(err.status || 500);
     res.send({error: err.message});
   });
-
-  // our custom JSON 404 middleware. Since it's placed last it will be the last middleware called,
-  // if all others invoke next() and do not respond.
-  // app.use((req, res) => {
-  //   res.status(404);
-  //   res.send({error: "Sorry, can't find that"});
-  // });
 };
 
 module.exports = apiRoutes;

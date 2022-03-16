@@ -18,6 +18,10 @@ module.exports = (app) => {
   });
 
   app.get('/auth/current_user', (req, res) => {
-    res.send(req.user);
+    if (req.user) {
+      res.send(req.user);
+    } else {
+      res.send('No user is currently logged in.');
+    }
   });
 };
