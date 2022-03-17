@@ -36,12 +36,12 @@ describe('Server application', function () {
         });
     });
 
-    it('should 404 without routes', function (done) {
+    it('should 200 without routes', function (done) {
       chai
         .request(app)
         .get('/')
         .end(function (err, res) {
-          res.should.have.status(404);
+          res.should.have.status(200);
           res.body.should.be.a('object');
           done();
         });
