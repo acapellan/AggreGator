@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "description": "AggreGator backend API to Oracle DBMS",
   "main": "app.js",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "mocha --exit"
   },
   "author": "Brian Hoblin, Alejandro Capellan, Jacob Boney, and Steven DeLoach",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.2"
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.5",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "chai": "^4.3.6",

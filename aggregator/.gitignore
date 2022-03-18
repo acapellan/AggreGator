@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production - allowing build directory to be committed
+# /build
 
 # misc
 .DS_Store
