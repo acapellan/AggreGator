@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomePage = () => {
+const Topics = () => {
   return (
     <>
       <div className="px-4 py-5 my-5 text-center">
@@ -17,4 +17,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Topics;
