@@ -5,18 +5,30 @@ class Navbar extends Component {
   renderContent() {
     switch (this.props.auth) {
       case null:
-        return 'still deciding';
+        return (
+          <a className="nav-link" href="#">
+            * * *
+          </a>
+        );
       case false:
-        return 'logged out';
+        return (
+          <a className="nav-link" href="/auth/google">
+            Login
+          </a>
+        );
       default:
-        return 'logged in';
+        return (
+          <a className="nav-link" href="/auth/logout">
+            Logout
+          </a>
+        );
     }
   }
 
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
           <div className="container">
             <a className="navbar-brand" href="/">
               AggreGator
@@ -54,7 +66,9 @@ class Navbar extends Component {
                     User Profile
                   </a>
                 </li>
-                {this.renderContent()}
+              </ul>
+              <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li className="nav-item">{this.renderContent()}</li>
               </ul>
             </div>
           </div>
