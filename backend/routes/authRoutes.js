@@ -1,11 +1,11 @@
 const passport = require('passport');
 
-module.exports = (app) => {
-  app.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']}));
+module.exports = app => {
+  app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
   app.get(
     '/auth/google/callback',
-    passport.authenticate('google', {failureRedirect: '/login'}),
+    passport.authenticate('google', { failureRedirect: '/login' }),
     function (req, res) {
       // Successful authentication, redirect home.
       res.redirect('/');
@@ -18,10 +18,6 @@ module.exports = (app) => {
   });
 
   app.get('/auth/current_user', (req, res) => {
-    if (req.user) {
-      res.send(req.user);
-    } else {
-      res.send('No user is currently logged in.');
-    }
+    res.send(req.user);
   });
 };
