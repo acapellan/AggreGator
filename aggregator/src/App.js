@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from './actions';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Topics from './components/Topics';
 import NewTopic from './components/NewTopic';
@@ -27,7 +28,9 @@ class App extends Component {
             <Route path="/topics/new" element={<NewTopic />} />
             <Route path="/user-profile" element={<UserProfile />} />
           </Routes>
+          <Footer/>
         </Router>
+        
       </div>
     );
   }
