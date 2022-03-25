@@ -56,7 +56,7 @@ class Navbar extends Component {
               <ul className="navbar-nav mx-lg-3 ms-lg-auto">
                 <li className="nav-item dropdown">
                   <a className="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src={search_icon} width="25" height="25"/>
+                    <img src={search_icon} width="20" height="20"/>
                   </a>
                   <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style={{width:"300px"}}>
                   <form className="d-flex mx-2">
@@ -67,7 +67,7 @@ class Navbar extends Component {
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src={user_icon} width="30" height="30"/>
+                    <img src={user_icon} width="20" height="20"/>
                   </a>
                   <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink" style={{width:"50px", color:"black"}}>
                     <a className="dropdown-item" href="/user-profile">User Profile</a>
