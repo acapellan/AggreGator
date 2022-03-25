@@ -8,25 +8,24 @@ class Navbar extends Component {
     switch (this.props.auth) {
       case null:
         return (
-          <a className="nav-link" href="#" style={{color:"black"}}>
+          <a className="dropdown-item" href="#">
             * * *
           </a>
         );
       case false:
         return (
-          <a className="nav-link" href="/auth/google" style={{color:"black"}}>
+          <a className="dropdown-item" href="/auth/google">
             Login
           </a>
         );
       default:
         return (
-          <a className="nav-link" href="/auth/logout" style={{color:"black"}}>
+          <a className="dropdown-item" href="/auth/logout">
             Logout
           </a>
         );
     }
   }
-
 
   render() {
     return (
