@@ -10,6 +10,10 @@ import Topics from './components/Topics';
 import NewTopic from './components/NewTopic';
 import UserProfile from './components/UserProfile';
 import SignUp from './components/SignUp';
+import Resources from './components/Resources';
+import Articles from './components/Articles';
+import Videos from './components/Videos';
+import Forums from './components/Forums';
 
 import './App.scss';
 
@@ -29,6 +33,10 @@ class App extends Component {
             <Route path="/topics/new" element={<NewTopic />} />
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="/Signup" element={<SignUp />} />
+            <Route path="/Resources" element={<Resources />} />
+            <Route path="/Articles" element={<Articles />} />
+            <Route path="/Videos" element={<Videos />} />
+            <Route path="/Forums" element={<Forums />} />
           </Routes>
           <Footer/>
         </Router>
