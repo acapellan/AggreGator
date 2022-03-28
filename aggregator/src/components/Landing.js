@@ -24,7 +24,7 @@ const HomePage = () => {
             <div className="row my-2">
               <div className="col">
                   <a type="button" className="btn btn-primary btn-lg px-4 text-nowrap mx-2" href="/auth/current_user"style={{width: 165}}>Current User</a>
-                  <a type="button" className="btn btn-primary btn-lg px-4 text-nowrap mx-2" href="/Signup" style={{width: 165}}>Sign Up</a>
+                  <a type="button" className="btn btn-primary btn-lg px-4 text-nowrap mx-2" href="/signup" style={{width: 165}}>Sign Up</a>
               </div>
             </div>
             <div className="row my-2">
