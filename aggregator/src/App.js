@@ -28,7 +28,7 @@ class App extends Component {
             <Route path="/topics" element={<Topics />} />
             <Route path="/topics/new" element={<NewTopic />} />
             <Route path="/user-profile" element={<UserProfile />} />
-            <Route path="/Signup" element={<SignUp />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
           <Footer/>
         </Router>
