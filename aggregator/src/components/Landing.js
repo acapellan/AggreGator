@@ -23,18 +23,18 @@ const HomePage = () => {
           <div className="container">
             <div className="row my-2">
               <div className="col">
-                  <a type="button" className="btn btn-primary btn-lg px-4 text-nowrap mx-2" href="/auth/current_user"style={{width: 165}}>Current User</a>
-                  <a type="button" className="btn btn-primary btn-lg px-4 text-nowrap mx-2" href="/signup" style={{width: 165}}>Sign Up</a>
+                  <a type="button" className="btn btn-primary btn-lg shadow-lg px-4 text-nowrap mx-2" href="/auth/current_user"style={{width: 165}}>Current User</a>
+                  <a type="button" className="btn btn-primary btn-lg shadow-lg px-4 text-nowrap mx-2" href="/Signup" style={{width: 165}}>Sign Up</a>
               </div>
             </div>
             <div className="row my-2">
               <div className="col">
-                <a type="button" className="btn btn-light btn-lg px-4" href="/auth/google" style={{width: 255}}><img src={googleLogo} width="25" height="25" /> Sign in with Google</a>
+                <a type="button" className="btn btn-light btn-lg shadow-lg px-4" href="/auth/google" style={{width: 255}}><img src={googleLogo} width="25" height="25" /> Sign in with Google</a>
               </div>
             </div>
             <div className="row my-2">
               <div className="col">
-                <a type="button" className="btn btn-info btn-lg px-4" href="/auth/logout" style={{width: 165}}>Logout</a>
+                <a type="button" className="btn btn-info btn-lg shadow-lg px-4" href="/auth/logout" style={{width: 165}}>Logout</a>
             </div>
             </div>
           </div>

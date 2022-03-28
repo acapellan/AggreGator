@@ -53,6 +53,11 @@ class Navbar extends Component {
                   New Topic
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Resources">
+                  Resources
+                </a>
+              </li>
               <ul className="navbar-nav mx-lg-3 ms-lg-auto">
                 <li className="nav-item dropdown">
                   <a className="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
