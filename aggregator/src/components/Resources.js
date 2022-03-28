@@ -10,7 +10,7 @@ const Resources = () => {
         <div className="container-fluid" style={{backgroundImage:`url(${alligator_background})`, backgroundSize:"cover", backgroundRepeat:"repeat"}}>
             <div className="text-center">
                 <div className="row">
-                    <h1 className="display-5 fw-bold py-4 text-white" style={{backgroundColor:"#407db4"}}>Resources</h1>
+                    <h1 className="display-5 fw-bold py-4 text-white shadow-lg" style={{backgroundColor:"#407db4"}}>Resources</h1>
                 </div>
                 <div className="row justify-content-center my-4 mx-2">
                     <div className="col-lg-3 bg-primary rounded-3 shadow-lg m-4 py-4">

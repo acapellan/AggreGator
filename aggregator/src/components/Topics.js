@@ -7,7 +7,7 @@ const Topics = () => {
       <div className="container-fluid" style={{backgroundImage:`url(${alligator_background})`, backgroundSize:"cover", backgroundRepeat:"repeat"}}>
         <div className="text-center">
           <div className="row">
-            <h1 className="display-5 fw-bold py-4 text-white" style={{backgroundColor:"#407db4"}}>Topics</h1>
+            <h1 className="display-5 fw-bold py-4 text-white shadow-lg" style={{backgroundColor:"#407db4"}}>Topics</h1>
           </div>
           <div className="row">
             <div className="col mx-5">
