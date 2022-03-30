@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import aggregatorLogo from '../resources/images/logo_square.png';
 import googleLogo from '../resources/images/googleLogo.png';
 import treeBackground from '../resources/images/background.png';

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import user_icon from '../resources/images/user_icon_white.png';
 import search_icon from '../resources/images/search_icon_white.png';
 
