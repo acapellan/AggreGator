@@ -52,7 +52,7 @@ describe('Server application', function () {
     it('should get all the users', function (done) {
       chai
         .request(app)
-        .get('/api/users/?api-key=foo')
+        .get('/api/users/?api-key=frontend_application')
         .end(function (err, res) {
           res.should.have.status(200);
           res.body.should.be.a('array');

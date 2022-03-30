@@ -32,11 +32,11 @@ class App extends Component {
             <Route path="/topics" element={<Topics />} />
             <Route path="/topics/new" element={<NewTopic />} />
             <Route path="/user-profile" element={<UserProfile />} />
-            <Route path="/Signup" element={<SignUp />} />
-            <Route path="/Resources" element={<Resources />} />
-            <Route path="/Articles" element={<Articles />} />
-            <Route path="/Videos" element={<Videos />} />
-            <Route path="/Forums" element={<Forums />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/forums" element={<Forums />} />
           </Routes>
           <Footer/>
         </Router>
