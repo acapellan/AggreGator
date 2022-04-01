@@ -3,7 +3,7 @@ const keys = {
     id: 'id',
     secret: 'secret'
   },
-  mongoURI: 'mongodb+srv://???',
+  mongoURI: process.env.MONGO_URI,
   cookieKeys: ['chocolate chip', 'peanut butter', 'oatmeal raisin', 'macadamia nut']
 };
 
