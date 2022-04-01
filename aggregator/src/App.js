@@ -14,6 +14,7 @@ import Resources from './components/Resources';
 import Articles from './components/Articles';
 import Videos from './components/Videos';
 import Forums from './components/Forums';
+import Topic from './components/Topic.js';
 
 import './App.scss';
 
@@ -37,6 +38,7 @@ class App extends Component {
             <Route path="/articles" element={<Articles />} />
             <Route path="/videos" element={<Videos />} />
             <Route path="/forums" element={<Forums />} />
+            <Route path="/topics/:topic" element={<Topic />} />
           </Routes>
           <Footer/>
         </Router>
