@@ -92,17 +92,19 @@ const apiRoutes = app => {
     next();
   });
 
-  // API key is valid, expose the data
+  // return all users
   app.get('/api/users', (req, res, next) => {
     // example: http://localhost:5000/api/users?api-key=frontend_application
     res.send(users);
   });
 
+  // return all topics
   app.get('/api/topics', (req, res, next) => {
     // example: http://localhost:5000/api/topics?api-key=frontend_application
     res.send(topics);
   });
 
+  // return one topic by key value
   app.get('/api/topics/:key', (req, res, next) => {
     // example: http://localhost:5000/api/topics/1?api-key=frontend_application
     const key = req.params.key;
@@ -111,10 +113,11 @@ const apiRoutes = app => {
     res.send(topic);
   });
 
-  app.get('/api/user/:name/topics', (req, res, next) => {
+  // return all topics by one author
+  app.get('/api/user/:author/topics', (req, res, next) => {
     // example: http://localhost:5000/api/user/Alejandro/topics?api-key=frontend_application
-    const name = req.params.name;
-    const user = userTopics[name];
+    const author = req.params.author;
+    const user = userTopics[author];
 
     if (user) {
       res.send(user);
@@ -127,8 +130,6 @@ const apiRoutes = app => {
   // will be passed through the defined middleware in order, but ONLY those with an arity of 4,
   // ignoring regular middleware.
   app.use((err, req, res, next) => {
-    // whatever you want here, feel free to populate properties on `err` to treat it differently in
-    // here.
     res.status(err.status || 500);
     res.send({ error: err.message });
   });
