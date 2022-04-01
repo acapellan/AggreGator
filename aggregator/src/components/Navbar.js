@@ -50,7 +50,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mx-2 mx-lg-0 container-fluid">
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <a className="nav-link" href="/">
                   Home
                 </a>
               </li>

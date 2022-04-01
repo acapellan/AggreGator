@@ -58,7 +58,7 @@ class Topics extends Component {
                 <div className="list-group">{this.renderContent()}</div>
               </div>
             </div>
-            <div className="row my-5">
+            <div className="row pb-5">
               <div className="col">
                 <Link class="btn btn-primary" to="#" role="button">
                   Create New Topic
