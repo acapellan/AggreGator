@@ -195,42 +195,40 @@ The table below summarizes the individual tasks that the team believes needs to 
 to meet the first sprint objective. Each team member agreed to work over a four-week period and
 contribute 10 to 12 hours per week.
 
-| Task                                        | PBI ID# | Effort Hours | Assignee |
-| ------------------------------------------- | :-----: | :----------: | :------: |
-| establish code review & acceptance criteria |   1.1   |      2       |    AC    |
-| develop initial tables and schema           |   1.2   |      8       |    AC    |
-| set up initial backend routes               |   1.3   |      2       |    SD    |
-| write initial tests (api)                   |   1.4   |      3       |    SD    |
-| design main page                            |   1.5   |      5       |    BH    |
-| write initial tests (frontend)              |   1.6   |      3       |    JB    |
-| specify data needed from AJAX calls         |   1.7   |      1       |    SD    |
-| establish site styling/look & feel          |   1.8   |      8       |    JB    |
-| code bookmark UI functionality              |   4.1   |      5       |    BH    |
-| create user schema                          |   4.2   |      3       |    AC    |
-| create bookmark schema                      |   4.3   |      3       |    AC    |
-| add authentication to site                  |   4.4   |      6       |    SD    |
-| create/expand user profile                  |   4.5   |      5       |    AC    |
-| code backend                                |   4.6   |      5       |    SD    |
-| write CRUD operations for bookmark table    |   4.7   |      6       |    AC    |
-| add user UI functionality for feature       |   4.8   |      6       |    BH    |
-| code business logic to match mentors        |  17.1   |      5       |    SD    |
-| create UI form to gather data               |  17.2   |      6       |    JB    |
-| create mentor schema                        |  17.3   |      3       |    AC    |
-| code search function/keyword lookup         |  17.4   |      5       |    JB    |
-| create/expand user profile                  |   6.1   |      5       |    AC    |
-| create UI for scheduling                    |   6.2   |      5       |    BH    |
-| develop business logic for matching         |   6.3   |      4       |    SD    |
-| create UI for resources page                |   9.1   |      6       |    JB    |
-| write business logic to match interests     |  13.1   |      2       |    SD    |
-| connect UF degree API for prerequisites     |  13.2   |      4       |    BH    |
-| create UI for electives                     |  13.3   |      6       |    BH    |
-| code upvote functionality                   |  13.4   |      6       |    JB    |
-| create forum schema                         |  15.1   |      3       |    AC    |
-| code backend for forum                      |  15.2   |      4       |    SD    |
-| create UI for forum                         |  15.3   |      5       |    BH    |
-| create UI for curated list of resources     |  15.4   |      6       |    JB    |
-| create forum schema                         |  16.1   |      3       |    AC    |
-| create UI for forum                         |  16.2   |      5       |    BH    |
-| code business logic to match interests      |  16.3   |      8       |    SD    |
-|                                             |         |              |          |
-| **ESTIMATED EFFORT HOURS**                  |         |     162      |          |
+| Task                                        | PBI ID# | Effort Hours | Assignee | Done       |
+| ------------------------------------------- | :-----: | :----------: | :------: | :--------: |
+| establish code review & acceptance criteria |   1.1   |      2       |    AC    | Done       |
+| develop initial tables and schema           |   1.2   |      8       |    AC    | Done       |
+| set up initial backend routes               |   1.3   |      2       |    SD    | Done       |
+| write initial tests (api)                   |   1.4   |      3       |    SD    | Done       |
+| design main page                            |   1.5   |      5       |    BH    | Done       |
+| write initial tests (frontend)              |   1.6   |      3       |    JB    | Punt       |
+| specify data needed from AJAX calls         |   1.7   |      1       |    SD    | Groom/Punt |
+| establish site styling/look & feel          |   1.8   |      8       |    JB    | Done       |
+| code bookmark UI functionality              |   4.1   |      5       |    BH    | Groom/Punt |
+| create user schema                          |   4.2   |      3       |    AC    | Groom/Punt |
+| create bookmark schema                      |   4.3   |      3       |    AC    | Groom/Punt |
+| add authentication to site                  |   4.4   |      6       |    SD    | Done       |
+| create/expand user profile                  |   4.5   |      5       |    AC    | Groom/Punt |
+| code backend                                |   4.6   |      5       |    SD    | Groom/Punt |
+| write CRUD operations for bookmark table    |   4.7   |      6       |    AC    | Groom/Punt |
+| add user UI functionality for feature       |   4.8   |      6       |    BH    | Groom/Punt |
+| code business logic to match mentors        |  17.1   |      5       |    SD    | Groom/Punt |
+| create UI form to gather data               |  17.2   |      6       |    JB    | Groom/Punt |
+| create mentor schema                        |  17.3   |      3       |    AC    | Groom/Punt |
+| code search function/keyword lookup         |  17.4   |      5       |    JB    | Groom/Punt |
+| create/expand user profile                  |   6.1   |      5       |    AC    | Groom/Punt |
+| create UI for scheduling                    |   6.2   |      5       |    BH    | Groom/Punt |
+| develop business logic for matching         |   6.3   |      4       |    SD    | Groom/Punt |
+| create UI for resources page                |   9.1   |      6       |    JB    | Groom/Punt |
+| write business logic to match interests     |  13.1   |      2       |    SD    | Groom/Punt |
+| connect UF degree API for prerequisites     |  13.2   |      4       |    BH    | Groom/Punt |
+| create UI for electives                     |  13.3   |      6       |    BH    | Groom/Punt |
+| code upvote functionality                   |  13.4   |      6       |    JB    | Groom/Punt |
+| create forum schema                         |  15.1   |      3       |    AC    | Groom/Punt |
+| code backend for forum                      |  15.2   |      4       |    SD    | Groom/Punt |
+| create UI for forum                         |  15.3   |      5       |    BH    | Groom/Punt |
+| create UI for curated list of resources     |  15.4   |      6       |    JB    | Groom/Punt |
+| code business logic to match interests      |  16.3   |      8       |    SD    | Groom/Punt |
+|                                             |         |              |          |            |
+| **ESTIMATED EFFORT HOURS**                  |         |              |          |            |
