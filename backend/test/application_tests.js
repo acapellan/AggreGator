@@ -9,9 +9,30 @@ let chaiHttp = require('chai-http');
 let app = require('../app');
 let should = chai.should();
 
+const keys = require('../config/keys');
 const mongoose = require('mongoose');
 const User = mongoose.model('users');
 const Topic = mongoose.model('topics');
+
+// connect to database, create anonymous user account if it does not exist
+mongoose.connect(keys.mongoURI, async err => {
+  if (err) {
+    console.log(err);
+  } else {
+    const User = mongoose.model('users');
+
+    // search database for the anonymous user account
+    const anonymousUser = await User.findOne({ googleID: 'anonymous' });
+
+    if (!anonymousUser) {
+      const user = await new User({
+        googleID: 'anonymous',
+        name: { first: 'Anonymous', last: 'User' }
+      });
+      user.save();
+    }
+  }
+});
 
 chai.use(chaiHttp);
 
