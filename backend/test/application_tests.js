@@ -18,7 +18,7 @@ const Topic = mongoose.model('topics');
 chai.use(chaiHttp);
 
 // Database enabled tests
-describe('Topics', async () => {
+describe('Topics', () => {
   // empty the database before each test
   beforeEach(done => {
     Topic.deleteMany({}, err => {
@@ -26,18 +26,18 @@ describe('Topics', async () => {
     });
   });
 
-  describe('/GET topics', async () => {
-    it('it should DELETE all the topics', async () => {
-      await Topic.deleteMany({});
+  describe('/GET topics', () => {
+    it('it should GET all the topics', done => {
+      chai
+        .request(app)
+        .get('/api/topics?api-key=test_application')
+        .end((err, res) => {
+          res.should.have.status(200);
+          res.body.should.be.a('array');
+          res.body.length.should.be.eql(0);
+          done();
+        });
     });
-
-    it('it should GET all the topics', async () => {
-      const res = await chai.request(app).get('/api/topics?api-key=test_application');
-
-      res.should.have.status(200);
-      res.body.should.be.a('array');
-      res.body.length.should.be.eql(0);
-    }).timeout(20000);
   });
 
   describe('/POST topics', async () => {
