@@ -38,11 +38,11 @@ chai.use(chaiHttp);
 
 // Database enabled tests
 describe('Topics', async () => {
-  beforeEach(async () => {
-    await Topic.deleteMany({});
-  });
-
   describe('/GET topics', () => {
+    it('it should DELETE all the topics', async () => {
+      await Topic.deleteMany({});
+    });
+
     it('it should GET all the topics', async () => {
       const res = await chai.request(app).get('/api/topics?api-key=test_application');
 
