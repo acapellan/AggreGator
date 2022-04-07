@@ -104,46 +104,48 @@ describe('Topics', () => {
     });
   });
 
-  // describe('/PUT/:id book', () => {
-  //   it('it should UPDATE a book given the id', done => {
-  //     let book = new Book({
+  // PUT route not yet created
+  // describe('/PUT/:id topic', () => {
+  //   it('it should UPDATE a topic given the id', done => {
+  //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
   //       author: 'C.S. Lewis',
   //       year: 1948,
   //       pages: 778
   //     });
-  //     book.save((err, book) => {
+  //     topic.save((err, topic) => {
   //       chai
   //         .request(app)
-  //         .put('/book/' + book.id)
+  //         .put('/topic/' + topic.id)
   //         .send({ title: 'The Chronicles of Narnia', author: 'C.S. Lewis', year: 1950, pages: 778 })
   //         .end((err, res) => {
   //           res.should.have.status(200);
   //           res.body.should.be.a('object');
-  //           res.body.should.have.property('message').eql('Book updated!');
-  //           res.body.book.should.have.property('year').eql(1950);
+  //           res.body.should.have.property('message').eql('Topic updated!');
+  //           res.body.topic.should.have.property('year').eql(1950);
   //           done();
   //         });
   //     });
   //   });
   // });
 
-  // describe('/DELETE/:id book', () => {
-  //   it('it should DELETE a book given the id', done => {
-  //     let book = new Book({
+  // DELETE route not yet created
+  // describe('/DELETE/:id topic', () => {
+  //   it('it should DELETE a topic given the id', done => {
+  //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
   //       author: 'C.S. Lewis',
   //       year: 1948,
   //       pages: 778
   //     });
-  //     book.save((err, book) => {
+  //     topic.save((err, Topic) => {
   //       chai
   //         .request(app)
-  //         .delete('/book/' + book.id)
+  //         .delete('/topic/' + topic.id)
   //         .end((err, res) => {
   //           res.should.have.status(200);
   //           res.body.should.be.a('object');
-  //           res.body.should.have.property('message').eql('Book successfully deleted!');
+  //           res.body.should.have.property('message').eql('Topic successfully deleted!');
   //           res.body.result.should.have.property('ok').eql(1);
   //           res.body.result.should.have.property('n').eql(1);
   //           done();
