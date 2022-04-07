@@ -16,7 +16,7 @@ const Topic = mongoose.model('topics');
 chai.use(chaiHttp);
 
 // Database enabled tests
-describe('Topics', () => {
+describe('Topics', async () => {
   beforeEach(async () => {
     await Topic.deleteMany({});
   });
