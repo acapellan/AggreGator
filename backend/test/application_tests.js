@@ -34,7 +34,7 @@ describe('Topics', () => {
           res.body.length.should.be.eql(0);
           done();
         });
-    });
+    }).timeout(5000);
   });
 
   describe('/POST topics', () => {
@@ -53,7 +53,7 @@ describe('Topics', () => {
           res.body.errors.should.have.property('title');
           res.body.errors.title.should.have.property('kind').eql('required');
           done();
-        });
+        }).timeout(5000);
     });
 
     it('it should POST a topic ', done => {
@@ -75,7 +75,7 @@ describe('Topics', () => {
           res.body.topic.should.have.property('body');
           done();
         });
-    });
+    }).timeout(5000);
   });
 
   describe('/GET/:id topic', () => {
@@ -101,7 +101,7 @@ describe('Topics', () => {
       res.body.should.have.property('datePosted');
       res.body.should.have.property('body');
       res.body.should.have.property('_id').eql(topic.id);
-    });
+    }).timeout(5000);
   });
 
   // PUT route not yet created
