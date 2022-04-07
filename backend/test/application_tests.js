@@ -8,37 +8,18 @@ let chai = require('chai');
 let chaiHttp = require('chai-http');
 let app = require('../app');
 let should = chai.should();
+const mongoose = require('mongoose');
 
 const keys = require('../config/keys');
-const mongoose = require('mongoose');
+
 const User = mongoose.model('users');
 const Topic = mongoose.model('topics');
-
-// connect to database, create anonymous user account if it does not exist
-mongoose.connect(keys.mongoURI, async err => {
-  if (err) {
-    console.log(err);
-  } else {
-    const User = mongoose.model('users');
-
-    // search database for the anonymous user account
-    const anonymousUser = await User.findOne({ googleID: 'anonymous' });
-
-    if (!anonymousUser) {
-      const user = await new User({
-        googleID: 'anonymous',
-        name: { first: 'Anonymous', last: 'User' }
-      });
-      user.save();
-    }
-  }
-});
 
 chai.use(chaiHttp);
 
 // Database enabled tests
 describe('Topics', async () => {
-  describe('/GET topics', () => {
+  describe('/GET topics', async () => {
     it('it should DELETE all the topics', async () => {
       await Topic.deleteMany({});
     });
@@ -52,7 +33,7 @@ describe('Topics', async () => {
     }).timeout(20000);
   });
 
-  describe('/POST topics', () => {
+  describe('/POST topics', async () => {
     it('it should not POST a topic without title field', async () => {
       const topic = {
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
@@ -85,7 +66,7 @@ describe('Topics', async () => {
     }).timeout(20000);
   });
 
-  describe('/GET/:id topic', () => {
+  describe('/GET/:id topic', async () => {
     it('it should GET a topic by the given id', async () => {
       const topic = new Topic({
         author: new User({ googleID: 'application test', name: { first: 'John', last: 'Doe' } }),
@@ -112,7 +93,7 @@ describe('Topics', async () => {
   });
 
   // PUT route not yet created
-  // describe('/PUT/:id topic', () => {
+  // describe('/PUT/:id topic', async () => {
   //   it('it should UPDATE a topic given the id', done => {
   //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
@@ -137,7 +118,7 @@ describe('Topics', async () => {
   // });
 
   // DELETE route not yet created
-  // describe('/DELETE/:id topic', () => {
+  // describe('/DELETE/:id topic', async () => {
   //   it('it should DELETE a topic given the id', done => {
   //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
