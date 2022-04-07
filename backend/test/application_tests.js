@@ -19,6 +19,13 @@ chai.use(chaiHttp);
 
 // Database enabled tests
 describe('Topics', async () => {
+  // empty the database before each test
+  beforeEach(done => {
+    Topic.deleteMany({}, err => {
+      done();
+    });
+  });
+
   describe('/GET topics', async () => {
     it('it should DELETE all the topics', async () => {
       await Topic.deleteMany({});
