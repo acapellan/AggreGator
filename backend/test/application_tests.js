@@ -11,8 +11,149 @@ let should = chai.should();
 
 const mongoose = require('mongoose');
 const User = mongoose.model('users');
+const Topic = mongoose.model('topics');
 
 chai.use(chaiHttp);
+
+// Database enabled tests
+describe('Topics', () => {
+  beforeEach(done => {
+    Topic.deleteMany({}, err => {
+      done();
+    });
+  });
+
+  describe('/GET topics', () => {
+    it('it should GET all the topics', done => {
+      chai
+        .request(app)
+        .get('/api/topics?api-key=test_application')
+        .end((err, res) => {
+          res.should.have.status(200);
+          res.body.should.be.a('array');
+          res.body.length.should.be.eql(0);
+          done();
+        });
+    });
+  });
+
+  describe('/POST topics', () => {
+    it('it should not POST a topic without title field', done => {
+      let topic = {
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+      };
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end((err, res) => {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('errors');
+          res.body.errors.should.have.property('title');
+          res.body.errors.title.should.have.property('kind').eql('required');
+          done();
+        });
+    });
+
+    it('it should POST a topic ', done => {
+      let topic = {
+        title: 'Find a study partner',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+      };
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end((err, res) => {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('message').eql('topic successfully added');
+          res.body.topic.should.have.property('author');
+          res.body.topic.should.have.property('title');
+          res.body.topic.should.have.property('datePosted');
+          res.body.topic.should.have.property('body');
+          done();
+        });
+    });
+  });
+
+  describe('/GET/:id topic', () => {
+    it('it should GET a topic by the given id', async () => {
+      const topic = new Topic({
+        author: new User({ googleID: 'application test', name: { first: 'John', last: 'Doe' } }),
+        title: 'Best learning resources',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        datePosted: new Date()
+      });
+
+      await topic.save();
+
+      const res = await chai
+        .request(app)
+        .get('/api/topics/' + topic._id + '?api-key=test_application')
+        .send(topic);
+
+      res.should.have.status(200);
+      res.body.should.be.a('object');
+      res.body.should.have.property('author');
+      res.body.should.have.property('title');
+      res.body.should.have.property('datePosted');
+      res.body.should.have.property('body');
+      res.body.should.have.property('_id').eql(topic.id);
+    });
+  });
+
+  // describe('/PUT/:id book', () => {
+  //   it('it should UPDATE a book given the id', done => {
+  //     let book = new Book({
+  //       title: 'The Chronicles of Narnia',
+  //       author: 'C.S. Lewis',
+  //       year: 1948,
+  //       pages: 778
+  //     });
+  //     book.save((err, book) => {
+  //       chai
+  //         .request(app)
+  //         .put('/book/' + book.id)
+  //         .send({ title: 'The Chronicles of Narnia', author: 'C.S. Lewis', year: 1950, pages: 778 })
+  //         .end((err, res) => {
+  //           res.should.have.status(200);
+  //           res.body.should.be.a('object');
+  //           res.body.should.have.property('message').eql('Book updated!');
+  //           res.body.book.should.have.property('year').eql(1950);
+  //           done();
+  //         });
+  //     });
+  //   });
+  // });
+
+  // describe('/DELETE/:id book', () => {
+  //   it('it should DELETE a book given the id', done => {
+  //     let book = new Book({
+  //       title: 'The Chronicles of Narnia',
+  //       author: 'C.S. Lewis',
+  //       year: 1948,
+  //       pages: 778
+  //     });
+  //     book.save((err, book) => {
+  //       chai
+  //         .request(app)
+  //         .delete('/book/' + book.id)
+  //         .end((err, res) => {
+  //           res.should.have.status(200);
+  //           res.body.should.be.a('object');
+  //           res.body.should.have.property('message').eql('Book successfully deleted!');
+  //           res.body.result.should.have.property('ok').eql(1);
+  //           res.body.result.should.have.property('n').eql(1);
+  //           done();
+  //         });
+  //     });
+  //   });
+  // });
+});
+
+////////////////////////
 
 // Load application
 describe('Server application', function () {
@@ -82,44 +223,6 @@ describe('Server application', function () {
           res.should.have.status(200);
           res.body.should.be.a('array');
           res.body.length.should.be.eql(4);
-          done();
-        });
-    });
-
-    it('should get all the topics', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('array');
-          res.body.length.should.be.eql(6);
-          done();
-        });
-    });
-
-    it('should get one topic', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics/1?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('author').eql('Brian');
-          res.body.should.have.property('title').eql('LinkedIn courses of interest');
-          done();
-        });
-    });
-
-    it('should get one topic with a date and body', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics/2?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('datePosted');
-          res.body.should.have.property('body');
           done();
         });
     });
