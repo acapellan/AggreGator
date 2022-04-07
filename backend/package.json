@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "mocha --exit --timeout 10000"
+    "test": "mocha --exit --timeout 20000"
   },
   "author": "Brian Hoblin, Alejandro Capellan, Jacob Boney, and Steven DeLoach",
   "license": "MIT",
