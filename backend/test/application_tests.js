@@ -40,41 +40,51 @@ describe('Topics', function () {
     });
   });
 
-  describe('/POST topics', async () => {
-    it('it should not POST a topic without title field', async () => {
+  describe('/POST topics', function () {
+    it('it should not POST a topic without title field', function (done) {
       const topic = {
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
       };
 
-      const res = await chai.request(app).post('/api/topics?api-key=test_application').send(topic);
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end(function (err, res) {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('errors');
+          res.body.errors.should.have.property('title');
+          res.body.errors.title.should.have.property('kind').eql('required');
+          done();
+        });
+    });
 
-      res.should.have.status(200);
-      res.body.should.be.a('object');
-      res.body.should.have.property('errors');
-      res.body.errors.should.have.property('title');
-      res.body.errors.title.should.have.property('kind').eql('required');
-    }).timeout(20000);
-
-    it('it should POST a topic ', async () => {
+    it('it should POST a topic ', function (done) {
       const topic = {
         title: 'Find a study partner',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
       };
 
-      const res = await chai.request(app).post('/api/topics?api-key=test_application').send(topic);
-
-      res.should.have.status(200);
-      res.body.should.be.a('object');
-      res.body.should.have.property('message').eql('topic successfully added');
-      res.body.topic.should.have.property('author');
-      res.body.topic.should.have.property('title');
-      res.body.topic.should.have.property('datePosted');
-      res.body.topic.should.have.property('body');
-    }).timeout(20000);
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end(function (err, res) {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('message').eql('topic successfully added');
+          res.body.topic.should.have.property('author');
+          res.body.topic.should.have.property('title');
+          res.body.topic.should.have.property('datePosted');
+          res.body.topic.should.have.property('body');
+          done();
+        });
+    });
   });
 
-  describe('/GET/:id topic', async () => {
-    it('it should GET a topic by the given id', async () => {
+  describe('/GET/:id topic', function () {
+    it('it should GET a topic by the given id', function (done) {
       const topic = new Topic({
         author: new User({ googleID: 'application test', name: { first: 'John', last: 'Doe' } }),
         title: 'Best learning resources',
@@ -82,25 +92,27 @@ describe('Topics', function () {
         datePosted: new Date()
       });
 
-      await topic.save();
-
-      const res = await chai
-        .request(app)
-        .get('/api/topics/' + topic._id + '?api-key=test_application')
-        .send(topic);
-
-      res.should.have.status(200);
-      res.body.should.be.a('object');
-      res.body.should.have.property('author');
-      res.body.should.have.property('title');
-      res.body.should.have.property('datePosted');
-      res.body.should.have.property('body');
-      res.body.should.have.property('_id').eql(topic.id);
-    }).timeout(20000);
+      topic.save(function (err, topic, numberAffected) {
+        chai
+          .request(app)
+          .get('/api/topics/' + topic._id + '?api-key=test_application')
+          .send(topic)
+          .end(function (err, res) {
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('author');
+            res.body.should.have.property('title');
+            res.body.should.have.property('datePosted');
+            res.body.should.have.property('body');
+            res.body.should.have.property('_id').eql(topic.id);
+            done();
+          });
+      });
+    });
   });
 
   // PUT route not yet created
-  // describe('/PUT/:id topic', async () => {
+  // describe('/PUT/:id topic', function () {
   //   it('it should UPDATE a topic given the id', done => {
   //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
@@ -125,7 +137,7 @@ describe('Topics', function () {
   // });
 
   // DELETE route not yet created
-  // describe('/DELETE/:id topic', async () => {
+  // describe('/DELETE/:id topic', function () {
   //   it('it should DELETE a topic given the id', done => {
   //     let topic = new Topic({
   //       title: 'The Chronicles of Narnia',
