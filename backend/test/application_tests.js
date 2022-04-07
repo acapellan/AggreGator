@@ -53,7 +53,8 @@ describe('Topics', () => {
           res.body.errors.should.have.property('title');
           res.body.errors.title.should.have.property('kind').eql('required');
           done();
-        }).timeout(5000);
+        })
+        .timeout(5000);
     });
 
     it('it should POST a topic ', done => {
