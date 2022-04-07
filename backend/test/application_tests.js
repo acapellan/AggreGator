@@ -18,20 +18,20 @@ const Topic = mongoose.model('topics');
 chai.use(chaiHttp);
 
 // Database enabled tests
-describe('Topics', () => {
+describe('Topics', function () {
   // empty the database before each test
-  beforeEach(done => {
-    Topic.deleteMany({}, err => {
+  beforeEach(function (done) {
+    Topic.deleteMany({}, function (err) {
       done();
     });
   });
 
-  describe('/GET topics', () => {
-    it('it should GET all the topics', done => {
+  describe('/GET topics', function () {
+    it('it should GET all the topics', function (done) {
       chai
         .request(app)
         .get('/api/topics?api-key=test_application')
-        .end((err, res) => {
+        .end(function (err, res) {
           res.should.have.status(200);
           res.body.should.be.a('array');
           res.body.length.should.be.eql(0);
