@@ -17,66 +17,51 @@ chai.use(chaiHttp);
 
 // Database enabled tests
 describe('Topics', () => {
-  beforeEach(done => {
-    Topic.deleteMany({}, err => {
-      done();
-    });
+  beforeEach(async () => {
+    await Topic.deleteMany({});
   });
 
   describe('/GET topics', () => {
-    it('it should GET all the topics', done => {
-      chai
-        .request(app)
-        .get('/api/topics?api-key=test_application')
-        .end((err, res) => {
-          res.should.have.status(200);
-          res.body.should.be.a('array');
-          res.body.length.should.be.eql(0);
-          done();
-        });
-    }).timeout(5000);
+    it('it should GET all the topics', async () => {
+      const res = await chai.request(app).get('/api/topics?api-key=test_application');
+
+      res.should.have.status(200);
+      res.body.should.be.a('array');
+      res.body.length.should.be.eql(0);
+    }).timeout(20000);
   });
 
   describe('/POST topics', () => {
-    it('it should not POST a topic without title field', done => {
-      let topic = {
+    it('it should not POST a topic without title field', async () => {
+      const topic = {
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
       };
-      chai
-        .request(app)
-        .post('/api/topics?api-key=test_application')
-        .send(topic)
-        .end((err, res) => {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('errors');
-          res.body.errors.should.have.property('title');
-          res.body.errors.title.should.have.property('kind').eql('required');
-          done();
-        })
-        .timeout(5000);
-    });
 
-    it('it should POST a topic ', done => {
-      let topic = {
+      const res = await chai.request(app).post('/api/topics?api-key=test_application').send(topic);
+
+      res.should.have.status(200);
+      res.body.should.be.a('object');
+      res.body.should.have.property('errors');
+      res.body.errors.should.have.property('title');
+      res.body.errors.title.should.have.property('kind').eql('required');
+    }).timeout(20000);
+
+    it('it should POST a topic ', async () => {
+      const topic = {
         title: 'Find a study partner',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
       };
-      chai
-        .request(app)
-        .post('/api/topics?api-key=test_application')
-        .send(topic)
-        .end((err, res) => {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('message').eql('topic successfully added');
-          res.body.topic.should.have.property('author');
-          res.body.topic.should.have.property('title');
-          res.body.topic.should.have.property('datePosted');
-          res.body.topic.should.have.property('body');
-          done();
-        });
-    }).timeout(5000);
+
+      const res = await chai.request(app).post('/api/topics?api-key=test_application').send(topic);
+
+      res.should.have.status(200);
+      res.body.should.be.a('object');
+      res.body.should.have.property('message').eql('topic successfully added');
+      res.body.topic.should.have.property('author');
+      res.body.topic.should.have.property('title');
+      res.body.topic.should.have.property('datePosted');
+      res.body.topic.should.have.property('body');
+    }).timeout(20000);
   });
 
   describe('/GET/:id topic', () => {
@@ -102,7 +87,7 @@ describe('Topics', () => {
       res.body.should.have.property('datePosted');
       res.body.should.have.property('body');
       res.body.should.have.property('_id').eql(topic.id);
-    }).timeout(5000);
+    }).timeout(20000);
   });
 
   // PUT route not yet created
