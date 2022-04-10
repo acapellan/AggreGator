@@ -3,18 +3,41 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = require('./config/keys');
-require('./models/User.js');
-require('./services/passport.js');
+const bodyParser = require('body-parser');
 
-// connect to database, display error if unsuccessful
-mongoose.connect(keys.mongoURI, (err) => {
-  if (err) console.log(err);
+const keys = require('./config/keys');
+
+require('./models/User');
+require('./models/Topic');
+require('./services/passport');
+
+// connect to database, create anonymous user account if it does not exist
+mongoose.connect(keys.mongoURI, async err => {
+  if (err) {
+    console.log(err);
+  } else {
+    const User = mongoose.model('users');
+
+    // search database for the anonymous user account
+    const anonymousUser = await User.findOne({ googleID: 'anonymous' });
+
+    if (!anonymousUser) {
+      const user = await new User({
+        googleID: 'anonymous',
+        name: { first: 'Anonymous', last: 'User' }
+      });
+      user.save();
+    }
+  }
 });
 
 // create the application
 const app = express();
 
+// enable parsing of post request bodies
+app.use(bodyParser.json());
+
+// define the length of a client session
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,

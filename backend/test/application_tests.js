@@ -8,11 +8,161 @@ let chai = require('chai');
 let chaiHttp = require('chai-http');
 let app = require('../app');
 let should = chai.should();
-
 const mongoose = require('mongoose');
+
+const keys = require('../config/keys');
+
 const User = mongoose.model('users');
+const Topic = mongoose.model('topics');
 
 chai.use(chaiHttp);
+
+// Database enabled tests
+describe('Topics', function () {
+  // empty the database before each test
+  beforeEach(function (done) {
+    Topic.deleteMany({}, function (err) {
+      done();
+    });
+  });
+
+  describe('/GET topics', function () {
+    it('it should GET all the topics', function (done) {
+      chai
+        .request(app)
+        .get('/api/topics?api-key=test_application')
+        .end(function (err, res) {
+          res.should.have.status(200);
+          res.body.should.be.a('array');
+          res.body.length.should.be.eql(0);
+          done();
+        });
+    });
+  });
+
+  describe('/POST topics', function () {
+    it('it should not POST a topic without title field', function (done) {
+      const topic = {
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+      };
+
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end(function (err, res) {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('errors');
+          res.body.errors.should.have.property('title');
+          res.body.errors.title.should.have.property('kind').eql('required');
+          done();
+        });
+    });
+
+    it('it should POST a topic ', function (done) {
+      const topic = {
+        title: 'Find a study partner',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+      };
+
+      chai
+        .request(app)
+        .post('/api/topics?api-key=test_application')
+        .send(topic)
+        .end(function (err, res) {
+          res.should.have.status(200);
+          res.body.should.be.a('object');
+          res.body.should.have.property('message').eql('topic successfully added');
+          res.body.topic.should.have.property('author');
+          res.body.topic.should.have.property('title');
+          res.body.topic.should.have.property('datePosted');
+          res.body.topic.should.have.property('body');
+          done();
+        });
+    });
+  });
+
+  describe('/GET/:id topic', function () {
+    it('it should GET a topic by the given id', function (done) {
+      const topic = new Topic({
+        author: new User({ googleID: 'application test', name: { first: 'John', last: 'Doe' } }),
+        title: 'Best learning resources',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        datePosted: new Date()
+      });
+
+      topic.save(function (err, topic, numberAffected) {
+        chai
+          .request(app)
+          .get('/api/topics/' + topic._id + '?api-key=test_application')
+          .send(topic)
+          .end(function (err, res) {
+            res.should.have.status(200);
+            res.body.should.be.a('object');
+            res.body.should.have.property('author');
+            res.body.should.have.property('title');
+            res.body.should.have.property('datePosted');
+            res.body.should.have.property('body');
+            res.body.should.have.property('_id').eql(topic.id);
+            done();
+          });
+      });
+    });
+  });
+
+  // PUT route not yet created
+  // describe('/PUT/:id topic', function () {
+  //   it('it should UPDATE a topic given the id', done => {
+  //     let topic = new Topic({
+  //       title: 'The Chronicles of Narnia',
+  //       author: 'C.S. Lewis',
+  //       year: 1948,
+  //       pages: 778
+  //     });
+  //     topic.save((err, topic) => {
+  //       chai
+  //         .request(app)
+  //         .put('/topic/' + topic.id)
+  //         .send({ title: 'The Chronicles of Narnia', author: 'C.S. Lewis', year: 1950, pages: 778 })
+  //         .end((err, res) => {
+  //           res.should.have.status(200);
+  //           res.body.should.be.a('object');
+  //           res.body.should.have.property('message').eql('Topic updated!');
+  //           res.body.topic.should.have.property('year').eql(1950);
+  //           done();
+  //         });
+  //     });
+  //   });
+  // });
+
+  // DELETE route not yet created
+  // describe('/DELETE/:id topic', function () {
+  //   it('it should DELETE a topic given the id', done => {
+  //     let topic = new Topic({
+  //       title: 'The Chronicles of Narnia',
+  //       author: 'C.S. Lewis',
+  //       year: 1948,
+  //       pages: 778
+  //     });
+  //     topic.save((err, Topic) => {
+  //       chai
+  //         .request(app)
+  //         .delete('/topic/' + topic.id)
+  //         .end((err, res) => {
+  //           res.should.have.status(200);
+  //           res.body.should.be.a('object');
+  //           res.body.should.have.property('message').eql('Topic successfully deleted!');
+  //           res.body.result.should.have.property('ok').eql(1);
+  //           res.body.result.should.have.property('n').eql(1);
+  //           done();
+  //         });
+  //     });
+  //   });
+  // });
+});
+
+////////////////////////
 
 // Load application
 describe('Server application', function () {
@@ -82,44 +232,6 @@ describe('Server application', function () {
           res.should.have.status(200);
           res.body.should.be.a('array');
           res.body.length.should.be.eql(4);
-          done();
-        });
-    });
-
-    it('should get all the topics', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('array');
-          res.body.length.should.be.eql(6);
-          done();
-        });
-    });
-
-    it('should get one topic', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics/1?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('author').eql('Brian');
-          res.body.should.have.property('title').eql('LinkedIn courses of interest');
-          done();
-        });
-    });
-
-    it('should get one topic with a date and body', function (done) {
-      chai
-        .request(app)
-        .get('/api/topics/2?api-key=frontend_application')
-        .end(function (err, res) {
-          res.should.have.status(200);
-          res.body.should.be.a('object');
-          res.body.should.have.property('datePosted');
-          res.body.should.have.property('body');
           done();
         });
     });
