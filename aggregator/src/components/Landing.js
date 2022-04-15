@@ -7,6 +7,8 @@ import treeBackground from '../resources/images/background.png';
 
 class HomePage extends Component {
   renderContent() {
+    const user = this.props.auth;
+
     switch (this.props.auth) {
       case null:
         <p className="text-white">Loading...</p>;
@@ -22,7 +24,7 @@ class HomePage extends Component {
           </a>
         );
       default:
-        return <h2 className="text-white my-3">Hello, user!</h2>;
+        return <h2 className="text-white my-3">Hello, {user.name.first}!</h2>;
     }
   }
 

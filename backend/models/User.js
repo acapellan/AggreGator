@@ -6,7 +6,8 @@ const userSchema = new Schema({
   name: {
     first: String,
     last: String
-  }
+  },
+  email: String
 });
 
 mongoose.model('users', userSchema);

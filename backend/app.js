@@ -24,7 +24,8 @@ mongoose.connect(keys.mongoURI, async err => {
     if (!anonymousUser) {
       const user = await new User({
         googleID: 'anonymous',
-        name: { first: 'Anonymous', last: 'User' }
+        name: { first: 'Anonymous', last: 'User' },
+        email: 'no-email-entered'
       });
       user.save();
     }
