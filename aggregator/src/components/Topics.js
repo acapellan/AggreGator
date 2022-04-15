@@ -13,12 +13,12 @@ class Topics extends Component {
 
   renderContent() {
     return this.props.topics.map(topic => {
-      const linkTo = '/api/topics/' + topic.key + '?api-key=frontend_application';
+      const linkTo = '/api/topics/' + topic._id + '?api-key=frontend_application';
 
       return (
         <Link
           to={linkTo}
-          key={topic.key}
+          key={topic._id}
           className="list-group-item list-group-item-action flex-column align-items-start"
         >
           <div className="d-flex w-100 justify-content-between">
@@ -26,7 +26,7 @@ class Topics extends Component {
             <small>{new Date(topic.datePosted).toLocaleDateString('en-US')}</small>
           </div>
           <p className="mb-1">{topic.body}</p>
-          <small>by {topic.author}</small>
+          <small>by {topic.author.name.first} {topic.author.name.last}</small>
         </Link>
       );
     });
@@ -60,7 +60,7 @@ class Topics extends Component {
             </div>
             <div className="row my-5">
               <div className="col">
-                <Link class="btn btn-primary" to="#" role="button">
+                <Link className="btn btn-primary" to="#" role="button">
                   Create New Topic
                 </Link>
               </div>

@@ -1,8 +1,12 @@
+const mongoose = require('mongoose');
+const User = mongoose.model('users');
+const Topic = mongoose.model('topics');
+
 const apiRoutes = app => {
   // map of valid api keys, typically mapped to account info with some sort of database like redis.
   // api keys do _not_ serve as authentication, merely to track API usage or help prevent malicious
   // behavior etc.
-  const apiKeys = ['frontend_application', 'backend_application'];
+  const apiKeys = ['frontend_application', 'test_application'];
 
   // Create an error with status--this property can be used in our custom error handler (Connect
   // respects this property as well)
@@ -98,15 +102,51 @@ const apiRoutes = app => {
     res.send(users);
   });
 
-  app.get('/api/topics', (req, res, next) => {
+  // return all topics
+  app.get('/api/topics', async (req, res, next) => {
     // example: http://localhost:5000/api/topics?api-key=frontend_application
+    const topics = await Topic.find({});
+
     res.send(topics);
   });
 
-  app.get('/api/topics/:key', (req, res, next) => {
+  // create a new topic
+  app.post('/api/topics', async (req, res, next) => {
+    // example: http://localhost:5000/api/topics?api-key=frontend_application
+
+    let user = req.user;
+
+    if (!req.user) {
+      user = await User.findOne({ googleID: 'anonymous' });
+    }
+
+    const topic = new Topic({
+      author: user,
+      title: req.body.title,
+      datePosted: new Date(),
+      body: req.body.body
+    });
+
+    await Topic.create(topic, err => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send({ message: 'topic successfully added', topic });
+      }
+    });
+  });
+
+  // delete all topics
+  app['delete']('/api/topics', async (req, res, next) => {
+    const result = await Topic.deleteMany({});
+    res.send(result);
+  });
+
+  // return one topic by key value
+  app.get('/api/topics/:id', async (req, res, next) => {
     // example: http://localhost:5000/api/topics/1?api-key=frontend_application
-    const key = req.params.key;
-    const topic = topics[key];
+    const id = req.params.id;
+    const topic = await Topic.findById(id);
 
     res.send(topic);
   });
