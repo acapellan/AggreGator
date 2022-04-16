@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Topics from './components/Topics';
-import NewTopic from './components/NewTopic';
+import TopicForm from './components/TopicForm';
 import UserProfile from './components/UserProfile';
 import SignUp from './components/SignUp';
 import Resources from './components/Resources';
@@ -30,7 +30,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/topics" element={<Topics />} />
-            <Route path="/topics/new" element={<NewTopic />} />
+            <Route path="/topics/new" element={<TopicForm />} />
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/resources" element={<Resources />} />

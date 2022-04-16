@@ -60,7 +60,7 @@ class Topics extends Component {
             </div>
             <div className="row pb-5">
               <div className="col">
-                <Link className="btn btn-primary" to="#" role="button">
+                <Link className="btn btn-primary" to="/topics/new" role="button">
                   Create New Topic
                 </Link>
               </div>
