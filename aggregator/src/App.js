@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Topics from './components/Topics';
 import TopicForm from './components/TopicForm';
+import TopicDisplay from './components/TopicDisplay';
 import UserProfile from './components/UserProfile';
 import SignUp from './components/SignUp';
 import Resources from './components/Resources';
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/" element={<Landing />} />
             <Route path="/topics" element={<Topics />} />
             <Route path="/topics/new" element={<TopicForm />} />
+            <Route path="/topics/:id" element={<TopicDisplay />} />
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/resources" element={<Resources />} />
@@ -38,9 +40,8 @@ class App extends Component {
             <Route path="/videos" element={<Videos />} />
             <Route path="/forums" element={<Forums />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </Router>
-        
       </div>
     );
   }

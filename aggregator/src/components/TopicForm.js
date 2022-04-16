@@ -51,8 +51,8 @@ class TopicForm extends Component {
                   <h1 className="display-5 fw-bold py-4 text-white">New Topics</h1>
                 </div>
               </div>
-              <div className="row justify-content-md-center">
-                <div className="col-6 mx-5">
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-8 col-sm-10 mx-5">
                   <form onSubmit={this.handleSubmit} className="my-5">
                     <div className="mb-3">
                       <label htmlFor="topicTitle" className="form-label">

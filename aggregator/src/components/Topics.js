@@ -13,7 +13,13 @@ class Topics extends Component {
 
   renderContent() {
     return this.props.topics.map(topic => {
-      const linkTo = '/api/topics/' + topic._id + '?api-key=frontend_application';
+      const linkTo = '/topics/' + topic._id;
+
+      // shorten the body of the topic if it exceeds maxLength
+      const maxLength = 120;
+      if (topic.body.length > maxLength) {
+        topic.body = topic.body.slice(0, maxLength) + '...';
+      }
 
       return (
         <Link
@@ -26,7 +32,9 @@ class Topics extends Component {
             <small>{new Date(topic.datePosted).toLocaleDateString('en-US')}</small>
           </div>
           <p className="mb-1">{topic.body}</p>
-          <small>by {topic.author.name.first} {topic.author.name.last}</small>
+          <small>
+            by {topic.author.name.first} {topic.author.name.last}
+          </small>
         </Link>
       );
     });
