@@ -14,11 +14,12 @@ class Topics extends Component {
   renderContent() {
     return this.props.topics.map(topic => {
       const linkTo = '/topics/' + topic._id;
+      let body = topic.body;
 
       // shorten the body of the topic if it exceeds maxLength
       const maxLength = 120;
       if (topic.body.length > maxLength) {
-        topic.body = topic.body.slice(0, maxLength) + '...';
+        body = topic.body.slice(0, maxLength) + '...';
       }
 
       return (
@@ -31,7 +32,7 @@ class Topics extends Component {
             <h5 className="mb-1">{topic.title}</h5>
             <small>{new Date(topic.datePosted).toLocaleDateString('en-US')}</small>
           </div>
-          <p className="mb-1">{topic.body}</p>
+          <p className="mb-1">{body}</p>
           <small>
             by {topic.author.name.first} {topic.author.name.last}
           </small>
@@ -80,8 +81,8 @@ class Topics extends Component {
   }
 }
 
-function mapStateToProps({ topics }) {
-  return { topics };
+function mapStateToProps(state) {
+  return { topics: state.topics };
 }
 
 export default connect(mapStateToProps, { fetchTopics })(Topics);

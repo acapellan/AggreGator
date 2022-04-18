@@ -30,9 +30,11 @@ class App extends Component {
           <Navbar />
           <Routes>
             <Route path="/" element={<Landing />} />
+
             <Route path="/topics" element={<Topics />} />
             <Route path="/topics/new" element={<TopicForm />} />
             <Route path="/topics/:id" element={<TopicDisplay />} />
+
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/resources" element={<Resources />} />

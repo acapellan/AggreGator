@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
+import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { fetchTopic } from '../actions';
 
 class TopicDisplay extends Component {
   componentDidMount() {
-    this.props.fetchTopic('625b067aed933cddca3fe459'); // TODO remove hardcoded param
+    const id = window.location.pathname.replace('/topics/', '');
+    this.props.fetchTopic(id);
+  }
+
+  renderContent() {
+    return <div>{JSON.stringify(this.props)}</div>;
   }
 
   render() {
     return (
       <>
-        <div>props: {this.props.topic}</div>
+        <div>{this.renderContent()}</div>
       </>
     );
   }
 }
 
-function mapStateToProps({ topic }) {
-  return { topic };
+function mapStateToProps(state) {
+  return { topic: state.topic };
 }
 
 export default connect(mapStateToProps, { fetchTopic })(TopicDisplay);

@@ -14,8 +14,7 @@ export const fetchTopics = () => async dispatch => {
 };
 
 export const fetchTopic = id => async dispatch => {
-  const path = '/api/topics/' + id + '?api-key=frontend_application';
-  const res = await axios.get(path);
+  const res = await axios.get('/api/topics/' + id + '?api-key=frontend_application');
 
   dispatch({ type: FETCH_TOPIC, payload: res.data });
 };
