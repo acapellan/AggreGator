@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c8630f6d.css",
-    "main.js": "/static/js/main.bdb7c74c.js",
+    "main.js": "/static/js/main.276f56b0.js",
     "static/media/background.png": "/static/media/background.688d9384e536ba19d2dd.png",
     "static/media/alligator_background.png": "/static/media/alligator_background.9c70c01ae352fb36a362.png",
     "static/media/googleLogo.png": "/static/media/googleLogo.0590aaf0fe36e23dcc8c.png",
@@ -12,10 +12,10 @@
     "static/media/video_white.png": "/static/media/video_white.6dd237bc819abe1d754e.png",
     "index.html": "/index.html",
     "main.c8630f6d.css.map": "/static/css/main.c8630f6d.css.map",
-    "main.bdb7c74c.js.map": "/static/js/main.bdb7c74c.js.map"
+    "main.276f56b0.js.map": "/static/js/main.276f56b0.js.map"
   },
   "entrypoints": [
     "static/css/main.c8630f6d.css",
-    "static/js/main.bdb7c74c.js"
+    "static/js/main.276f56b0.js"
   ]
 }

@@ -14,7 +14,7 @@ passport.use(
       proxy: true
     },
     async (accessToken, refreshToken, profile, done) => {
-      const existingUser = await User.findOne({googleID: profile.id});
+      const existingUser = await User.findOne({ googleID: profile.id });
 
       if (existingUser) {
         return done(null, existingUser);
@@ -22,7 +22,7 @@ passport.use(
 
       const newUser = await new User({
         googleID: profile.id,
-        name: {
+        nomen: {
           first: profile.name.givenName,
           last: profile.name.familyName
         },

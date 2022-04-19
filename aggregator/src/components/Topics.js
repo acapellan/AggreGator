@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { fetchTopics } from '../actions';
-
+import { approxTime } from '../helpers/approxTime';
 import alligator_background from '../resources/images/alligator_background.png';
 
 class Topics extends Component {
@@ -30,11 +30,11 @@ class Topics extends Component {
         >
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">{topic.title}</h5>
-            <small>{new Date(topic.datePosted).toLocaleDateString('en-US')}</small>
+            <small>posted {approxTime(topic.datePosted)}</small>
           </div>
           <p className="mb-1">{body}</p>
           <small>
-            by {topic.author.name.first} {topic.author.name.last}
+            by {topic.author.nomen.first} {topic.author.nomen.last}
           </small>
         </Link>
       );
