@@ -100,7 +100,7 @@ following command inside the root project directory:
 $ npm start
 ```
 
-Then open a browser to `http://localhost:5000` to view the AggreGator application.
+Then open a browser to `http://localhost:5000/` to view the AggreGator application.
 
 ### How to start the application in development mode
 
@@ -112,7 +112,7 @@ following command inside the root project directory:
 $ npm run dev
 ```
 
-A browser window should open automatically to `http://localhost:3000` after both servers have
+A browser window should open automatically to `http://localhost:3000/` after both servers have
 finished loading.
 
 ### How to run tests locally
@@ -122,3 +122,9 @@ To run tests locally, run the following command from inside the root project dir
 ```sh
 $ npm run test
 ```
+
+### View a live-demonstration
+
+A working prototype is currently hosted at `http://shielded-earth-21418.herokuapp.com/`. This
+application is connected to a different database than the one that is used for testing and
+development.
