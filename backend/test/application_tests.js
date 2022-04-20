@@ -86,7 +86,7 @@ describe('Topics', function () {
   describe('/GET/:id topic', function () {
     it('it should GET a topic by the given id', function (done) {
       const topic = new Topic({
-        author: new User({ googleID: 'application test', name: { first: 'John', last: 'Doe' } }),
+        author: new User({ googleID: 'application_test', nomen: { first: 'John', last: 'Doe' } }),
         title: 'Best learning resources',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
         datePosted: new Date()
@@ -96,7 +96,6 @@ describe('Topics', function () {
         chai
           .request(app)
           .get('/api/topics/' + topic._id + '?api-key=test_application')
-          .send(topic)
           .end(function (err, res) {
             res.should.have.status(200);
             res.body.should.be.a('object');
@@ -110,59 +109,7 @@ describe('Topics', function () {
       });
     });
   });
-
-  // PUT route not yet created
-  // describe('/PUT/:id topic', function () {
-  //   it('it should UPDATE a topic given the id', done => {
-  //     let topic = new Topic({
-  //       title: 'The Chronicles of Narnia',
-  //       author: 'C.S. Lewis',
-  //       year: 1948,
-  //       pages: 778
-  //     });
-  //     topic.save((err, topic) => {
-  //       chai
-  //         .request(app)
-  //         .put('/topic/' + topic.id)
-  //         .send({ title: 'The Chronicles of Narnia', author: 'C.S. Lewis', year: 1950, pages: 778 })
-  //         .end((err, res) => {
-  //           res.should.have.status(200);
-  //           res.body.should.be.a('object');
-  //           res.body.should.have.property('message').eql('Topic updated!');
-  //           res.body.topic.should.have.property('year').eql(1950);
-  //           done();
-  //         });
-  //     });
-  //   });
-  // });
-
-  // DELETE route not yet created
-  // describe('/DELETE/:id topic', function () {
-  //   it('it should DELETE a topic given the id', done => {
-  //     let topic = new Topic({
-  //       title: 'The Chronicles of Narnia',
-  //       author: 'C.S. Lewis',
-  //       year: 1948,
-  //       pages: 778
-  //     });
-  //     topic.save((err, Topic) => {
-  //       chai
-  //         .request(app)
-  //         .delete('/topic/' + topic.id)
-  //         .end((err, res) => {
-  //           res.should.have.status(200);
-  //           res.body.should.be.a('object');
-  //           res.body.should.have.property('message').eql('Topic successfully deleted!');
-  //           res.body.result.should.have.property('ok').eql(1);
-  //           res.body.result.should.have.property('n').eql(1);
-  //           done();
-  //         });
-  //     });
-  //   });
-  // });
 });
-
-////////////////////////
 
 // Load application
 describe('Server application', function () {
