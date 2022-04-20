@@ -3,7 +3,7 @@ const { Schema } = mongoose; // same as `const Schema = mongoose.Schema;`
 
 const userSchema = new Schema({
   googleID: String,
-  name: {
+  nomen: {
     first: String,
     last: String
   },
