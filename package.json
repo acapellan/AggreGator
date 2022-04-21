@@ -3,7 +3,8 @@
     "start": "npm start --prefix backend",
     "server": "npm run dev --prefix backend",
     "client": "npm run start --prefix aggregator",
-    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "test": "npm run test --prefix backend"
   },
   "dependencies": {
     "body-parser": "^1.20.0",

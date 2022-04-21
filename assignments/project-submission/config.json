@@ -1,0 +1,11 @@
+{
+  "project-name": "AggreGator",
+  "description": "AggreGator is a web-based service for the University of Florida's students, professors, and alumni that provides a forum for preparing for upcoming courses, performing well in current courses, and remaining up-to-date on the latest industry trends. Gators are able to discuss, ask questions, share material, and encourage each other to achieve their goals in the classroom and boardroom. Unlike other services, AggreGator is a unique service designed specifically for Gators.",
+  "tas": ["Jennifer Sheldon"],
+  "members": ["Brian Hoblin", "Alejandro Capellan", "Jacob Boney", "Steven DeLoach"],
+  "images": [
+    "Spring22_ufonline_group3-spacebarCowboys_1.gif",
+    "Spring22_ufonline_group3-spacebarCowboys_2.gif",
+    "Spring22_ufonline_group3-spacebarCowboys_3.gif"
+  ]
+}
