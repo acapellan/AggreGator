@@ -24,7 +24,7 @@ class HomePage extends Component {
           </a>
         );
       default:
-        return <h2 className="text-white my-3">Hello, {user.name.first}!</h2>;
+        return <h2 className="text-white my-3">Hello, {user.nomen.first}!</h2>;
     }
   }
 
@@ -67,8 +67,8 @@ class HomePage extends Component {
   }
 }
 
-function mapStateToProps({ auth }) {
-  return { auth };
+function mapStateToProps(state) {
+  return { auth: state.auth };
 }
 
 export default connect(mapStateToProps)(HomePage);
